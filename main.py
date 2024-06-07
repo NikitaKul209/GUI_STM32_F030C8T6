@@ -1,3 +1,5 @@
+import subprocess
+
 import pymodbus.framer
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
@@ -31,17 +33,17 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.comboBox.setEnabled(False)
 
     def run_modbus(self):
-
         try:
             asyncio.run(modbus.run_async_simple_client(port=self.port,framer=pymodbus.Framer.RTU))
-        except Exception as exp:
-            print(str(exp))
+        except BaseException as e:
+
             msg = QMessageBox()
             msg.setWindowTitle("Ошибка")
-            msg.setText()
+            msg.setText(str(e))
             msg.setIcon(QMessageBox.Warning)
-
             msg.exec_()
+
+
             self.pushButton_1.setEnabled(False)
             self.pushButton_2.setEnabled(True)
             self.comboBox.setEnabled(True)

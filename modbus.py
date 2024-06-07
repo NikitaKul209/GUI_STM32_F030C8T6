@@ -16,22 +16,24 @@ async def run_async_simple_client(port, framer=Framer.SOCKET):
     client = ModbusClient.AsyncModbusSerialClient(
         port,
         framer,
-        # timeout=10,
+        timeout=1,
         # retries=3,
         # retry_on_empty=False,
         # strict=True,
         baudrate=38400,
         bytesize=8,
-        parity="N",
+        parity="E",
         stopbits=1,
         # handle_local_echo=False,
     )
 
     await client.connect()
+
     # test client is connected
     assert client.connected
     try:
-        rr = await client.read_holding_registers()
+        rr = await client.read_input_registers(address=0,count=4,slave=64)
+        print(rr.registers)
 
     except ModbusException as exc:
         print(f"Received ModbusException({exc}) from library")
