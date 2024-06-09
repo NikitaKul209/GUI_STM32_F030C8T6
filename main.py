@@ -8,7 +8,9 @@ from form import Ui_MainWindow
 import sys
 import serial
 import serial.tools.list_ports
-import  modbus
+from  modbus import ModbusRTU
+from threadModbus import Worker
+
 import asyncio
 class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def __init__(self):
@@ -16,15 +18,30 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.setupUi(self)
         self.functions()
 
+        self.modbus = None
+        self.thread = Worker()
+        self.thread.sinout.connect(self.update_value)
+        self.thread.start()
+
         self.pushButton_1.setEnabled(False)
+
         ports = serial.tools.list_ports.comports()
         for port in ports:
             self.comboBox.addItem(str(port.name))
+
         self.port = 0
 
+    def update_value(self,value):
+        print(value)
+        # self.textEdit_1.setText(value[0])
+        # self.textEdit_2.setText(value[1])
+        # self.textEdit_3.setText(value[2])
+        # self.textEdit_4.setText(value[3])
+
+
     def functions(self):
-        self.pushButton_1.clicked.connect(lambda: self.run_modbus() )
-        self.pushButton_2.clicked.connect(lambda: self.choose_port())
+        self.pushButton_1.clicked.connect(self.run_modbus)
+        self.pushButton_2.clicked.connect(self.choose_port)
 
     def choose_port(self):
         self.port =  self.comboBox.currentText()
@@ -33,21 +50,23 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.comboBox.setEnabled(False)
 
     def run_modbus(self):
-        try:
-            asyncio.run(modbus.run_async_simple_client(port=self.port,framer=pymodbus.Framer.RTU))
-        except BaseException as e:
+        self.modbus = ModbusRTU()
+        isConnection = self.modbus.run_sync_simple_client(self.port)
 
-            msg = QMessageBox()
-            msg.setWindowTitle("Ошибка")
-            msg.setText(str(e))
-            msg.setIcon(QMessageBox.Warning)
-            msg.exec_()
-
-
-            self.pushButton_1.setEnabled(False)
-            self.pushButton_2.setEnabled(True)
-            self.comboBox.setEnabled(True)
-
+        # if not isConnection:
+        #     msg = QMessageBox()
+        #     msg.setWindowTitle("Ошибка")
+        #     msg.setText("Подключение не удалось")
+        #     msg.setIcon(QMessageBox.Warning)
+        #     msg.exec_()
+        #
+        #
+        #     self.pushButton_1.setEnabled(False)
+        #     self.pushButton_2.setEnabled(True)
+        #     self.comboBox.setEnabled(True)
+        # else:
+        self.thread.modbus = self.modbus
+        self.thread.isWork = True
 
 
 if __name__ == "__main__":
