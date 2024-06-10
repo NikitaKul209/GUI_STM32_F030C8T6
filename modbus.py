@@ -41,15 +41,14 @@ class ModbusRTU:
         print("get and verify data")
         try:
             rr = self.client.read_input_registers(0, 4, slave=64)
-
         except ModbusException as exc:
             print(f"Received ModbusException({exc}) from library")
             self.client.close()
             return exc
         if rr.isError():
             print(f"Received Modbus library error({rr})")
-            self.client.close()
 
+            self.client.close()
             return rr
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
