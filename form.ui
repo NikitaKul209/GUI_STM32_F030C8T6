@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="pushButton_1">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>230</y>
+      <x>590</x>
+      <y>40</y>
       <width>191</width>
       <height>81</height>
      </rect>
@@ -57,39 +57,61 @@
    <widget class="QTextEdit" name="textEdit_1">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>410</y>
-      <width>181</width>
-      <height>101</height>
+      <x>510</x>
+      <y>240</y>
+      <width>561</width>
+      <height>301</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:24pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_2">
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>410</y>
-      <width>191</width>
-      <height>101</height>
+      <y>350</y>
+      <width>141</width>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_3">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>410</y>
-      <width>191</width>
-      <height>101</height>
+      <x>320</x>
+      <y>460</y>
+      <width>141</width>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label_1">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>330</y>
-      <width>191</width>
+      <x>20</x>
+      <y>230</y>
+      <width>261</width>
       <height>61</height>
      </rect>
     </property>
@@ -101,7 +123,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Температура</string>
+     <string>Температура, °С:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -110,10 +132,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>330</y>
-      <width>161</width>
-      <height>61</height>
+      <x>30</x>
+      <y>360</y>
+      <width>231</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -124,7 +146,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Давление</string>
+     <string>Давление, кПа:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -133,9 +155,9 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>330</y>
-      <width>161</width>
+      <x>30</x>
+      <y>470</y>
+      <width>251</width>
       <height>61</height>
      </rect>
     </property>
@@ -147,7 +169,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Влажность</string>
+     <string>Влажность, %RH:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -156,18 +178,23 @@
    <widget class="QTextEdit" name="textEdit_4">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>410</y>
-      <width>191</width>
-      <height>101</height>
+      <x>320</x>
+      <y>230</y>
+      <width>141</width>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>330</y>
+      <x>710</x>
+      <y>180</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -180,7 +207,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Ошибки</string>
+     <string>Сообщения</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -190,10 +217,33 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>60</y>
+      <y>40</y>
       <width>191</width>
-      <height>31</height>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>40</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Стоп</string>
     </property>
    </widget>
   </widget>

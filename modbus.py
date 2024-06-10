@@ -49,7 +49,8 @@ class ModbusRTU:
         if rr.isError():
             print(f"Received Modbus library error({rr})")
             self.client.close()
-            return
+
+            return rr
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
             # THIS IS NOT A PYTHON EXCEPTION, but a valid modbus message

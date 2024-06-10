@@ -19,7 +19,7 @@ class Worker(QThread):
             while self.isWork:
                 value = self.modbus.client_read_data()
                 # Transmitting signal
-                print(f'Значение в потоке {value}')
-                self.sinout.emit(str(value))
+                # print(f'Значение в потоке {(value)}')
+                self.sinout.emit(str(value.registers))
                 # Thread hibernates for 2 seconds
-                self.sleep(0.3)
+                self.sleep(1)
