@@ -44,16 +44,19 @@ class ModbusRTU:
         except ModbusException as exc:
             print(f"Received ModbusException({exc}) from library")
             self.client.close()
+            print("Client close")
             return exc
         if rr.isError():
             print(f"Received Modbus library error({rr})")
 
             self.client.close()
+            print("Client close")
             return rr
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
             # THIS IS NOT A PYTHON EXCEPTION, but a valid modbus message
             self.client.close()
+            print("Client close")
             return rr
 
         return rr
