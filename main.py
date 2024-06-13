@@ -1,6 +1,6 @@
 import subprocess
 
-import pymodbus.framer
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QMessageBox
@@ -59,10 +59,9 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
             else:
                 value = (value.strip('][').split(', '))
-                # print(f'Я в update error {value}')
-                self.textEdit_2.setText(value[1])
-                self.textEdit_3.setText(value[2])
-                self.textEdit_4.setText(value[3])
+                self.textEdit_2.setText(str(float(value[1])/10))
+                self.textEdit_3.setText(str(float(value[2])/10))
+                self.textEdit_4.setText(str(float(value[3])/10))
                 error = ""
 
 
@@ -81,16 +80,16 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 if (int(value[0]) & 1 << 6):
                     error +=("Ошибка в работе интерфейса I2C\n\n")
 
-                if (int(value[0]) & 1 << 7):
+                if not (int(value[0]) & 1 << 7):
                     self.textEdit_2.setStyleSheet("background-color: red;")
                 else:
                     self.textEdit_2.setStyleSheet("background-color: white;")
 
-                if (int(value[0]) & 1 << 8):
+                if not (int(value[0]) & 1 << 8):
                     self.textEdit_3.setStyleSheet("background-color: red;")
                 else:
                     self.textEdit_3.setStyleSheet("background-color: white;")
-                if (int(value[0]) & 1 << 9):
+                if not (int(value[0]) & 1 << 9):
                     self.textEdit_4.setStyleSheet("background-color: red;")
                 else:
                     self.textEdit_4.setStyleSheet("background-color: white;")
@@ -113,6 +112,15 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.comboBox.setEnabled(True)
 
 
+    def stop(self):
+        self.thread.isWork = False
+        self.isConnection = False
+        self.modbus.client.close()
+        print("Client close")
+        self.pushButton_1.setEnabled(False)
+        self.pushButton_2.setEnabled(True)
+        self.pushButton_3.setEnabled(False)
+        self.comboBox.setEnabled(True)
     def functions(self):
         self.pushButton_1.clicked.connect(self.run_modbus)
         self.pushButton_2.clicked.connect(self.choose_port)
