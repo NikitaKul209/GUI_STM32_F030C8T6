@@ -1,10 +1,5 @@
-import subprocess
-
-import pymodbus.framer
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QColor
 from PyQt5.QtWidgets import QMessageBox
-
 from form import Ui_MainWindow
 import sys
 import serial
@@ -13,17 +8,15 @@ from  modbus import ModbusRTU
 from threadModbus import Worker
 import datetime
 
-
-import asyncio
 class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.functions()
-
         self.text_edit_errors = ""
         self.text_edit_iteration = 0
-        self.text_edit_box =""*10
+        self.text_edit_box=[]
+        self.max_errors = 5
 
         self.modbus = None
         self.isConnection = False
@@ -55,11 +48,9 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
 
     def update_value(self,value):
-        # try:
-            print(len(self.text_edit_box))
-            text_edit_errors = ""
+        try:
             self.textEdit_5.setText("")
-            if len(value) < 3:
+            if len(value) == 1:
                 if 1 or 2 or 3 or 4 in int(value):
                     self.textEdit_2.setStyleSheet("background-color: red;")
                     self.textEdit_3.setStyleSheet("background-color: red;")
@@ -67,86 +58,65 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     self.textEdit_5.setText(value)
 
             elif "Modbus Error" in value:
-                self.isConnection = False
-                self.thread.isWork = False
-                msg = QMessageBox()
-                msg.setWindowTitle("Ошибка")
-                msg.setText(value)
-                msg.setIcon(QMessageBox.Warning)
-                msg.exec_()
-                self.pushButton_1.setEnabled(False)
-                self.pushButton_3.setEnabled(False)
-                self.pushButton_2.setEnabled(True)
-                self.comboBox.setEnabled(True)
-
+                self.stop()
+                self.QMessage(value)
 
             else:
                 value = (value.strip('][').split(', '))
-                # print(f'Я в update error {value}')
                 self.textEdit_2.setText(value[1])
                 self.textEdit_3.setText(value[2])
                 self.textEdit_4.setText(value[3])
 
-
-                if self.text_edit_iteration >= 10:
-                    self.text_edit_errors = ""
-                    self.text_edit_iteration = 0
-                else:
-                    self.text_edit_iteration += 1
                 error = ""
-
-
                 for i in range(7):
                     if (int(value[0]) & 1 << i):
                         error += self.dict_errors[i]
-                        self.text_edit_errors += self.dict_errors[i]
 
-
-                for i in range(7,10):
+                for i in range(7, 10):
                     if (int(value[0]) & 1 << i):
                         self.dict_valid_data[i].setStyleSheet("background-color: red;")
                     else:
                         self.dict_valid_data[i].setStyleSheet("background-color: green;")
 
-
-
-                if error != "":
+                if error !="":
                     date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
-                    error += date_time
-
-
+                    error = f'{date_time}\n{error}'
+                    self.log_error(error)
+                    for i in self.text_edit_box[::-1]:
+                        self.text_edit_errors+=i
+                    self.textEdit_1.setText(self.text_edit_errors)
                     with open("logs.txt", "a") as logs:
-                        logs.write(error +'\n')
-                self.textEdit_1.setText(self.text_edit_errors)
-        # except:
-        #     self.thread.isWork = False
-        #     self.isConnection = False
-        #     self.modbus.client.close()
-        #     print("Client close")
-        #     msg = QMessageBox()
-        #     msg.setWindowTitle("Ошибка")
-        #     msg.setText("Ошибка при попытке вывода данных")
-        #     msg.setIcon(QMessageBox.Warning)
-        #     msg.exec_()
-        #
-        #     self.pushButton_1.setEnabled(False)
-        #     self.pushButton_2.setEnabled(True)
-        #     self.pushButton_3.setEnabled(False)
-        #     self.comboBox.setEnabled(True)
+                        logs.write(error + '\n')
+                self.text_edit_errors = ""
 
+        except:
+            self.stop()
+            self.QMessage("Ошибка при попытке вывода данных")
 
+    def log_error(self, error_message):
+        self.text_edit_box.append(error_message)
+        if len(self.text_edit_box) > self.max_errors:
+            self.text_edit_box.pop(0)  # Удаляем самую старую ошибку, если превышен лимит
+
+    def QMessage(self,error):
+        msg = QMessageBox()
+        msg.setWindowTitle("Ошибка")
+        msg.setText(error)
+        msg.setIcon(QMessageBox.Warning)
+        msg.exec_()
     def functions(self):
         self.pushButton_1.clicked.connect(self.run_modbus)
         self.pushButton_2.clicked.connect(self.choose_port)
         self.pushButton_3.clicked.connect(self.stop)
-
     def stop(self):
-        self.pushButton_1.setEnabled(True)
-        self.pushButton_2.setEnabled(False)
-        self.pushButton_3.setEnabled(False)
         self.thread.isWork = False
-
-
+        self.isConnection = False
+        self.modbus.client.close()
+        self.pushButton_1.setEnabled(False)
+        self.pushButton_2.setEnabled(True)
+        self.pushButton_3.setEnabled(False)
+        self.comboBox.setEnabled(True)
+        print("Client close")
     def choose_port(self):
         self.port =  self.comboBox.currentText()
         self.pushButton_1.setEnabled(True)
@@ -164,12 +134,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.isConnection = self.modbus.run_sync_simple_client(self.port)
 
             if not self.isConnection:
-                msg = QMessageBox()
-                msg.setWindowTitle("Ошибка")
-                msg.setText("Подключение не удалось")
-                msg.setIcon(QMessageBox.Warning)
-                msg.exec_()
-
+                self.QMessage("Подключение не удалось")
                 self.pushButton_1.setEnabled(False)
                 self.pushButton_2.setEnabled(True)
                 self.comboBox.setEnabled(True)
