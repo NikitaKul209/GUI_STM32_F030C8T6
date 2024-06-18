@@ -25,16 +25,17 @@ class ModbusRTU:
             port,
             framer=framer,
             # timeout=10,
-            # retries=3,
-            # retry_on_empty=False,
+            # retries=5,
+            # retry_on_empty=True,
             # strict=True,
             baudrate=38400,
             bytesize=8,
             parity="E",
             stopbits=1,
-            # handle_local_echo=False,
+            handle_local_echo=False,
         )
         print("connect to server")
+
         return self.client.connect()
 
     def client_read_data(self):
@@ -44,19 +45,19 @@ class ModbusRTU:
         except ModbusException as exc:
             print(f"Received ModbusException({exc}) from library")
             self.client.close()
-            print("Client close")
+            # print("Client close")
             return exc
         if rr.isError():
             print(f"Received Modbus library error({rr})")
 
             self.client.close()
-            print("Client close")
+            # print("Client close")
             return rr
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
             # THIS IS NOT A PYTHON EXCEPTION, but a valid modbus message
-            self.client.close()
-            print("Client close")
+            # self.client.close()
+            # print("Client close")
             return rr
 
         return rr

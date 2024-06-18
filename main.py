@@ -1,3 +1,6 @@
+import time
+import threading
+import pymodbus.client.serial
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from form import Ui_MainWindow
@@ -16,7 +19,8 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.text_edit_errors = ""
         self.text_edit_iteration = 0
         self.text_edit_box=[]
-        self.max_errors = 5
+        self.max_errors = 10
+        self.ModbusConnection = False
 
         self.modbus = None
         self.isConnection = False
@@ -33,13 +37,13 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.port = 0
 
 
-        self.dict_errors = {0:"Измерение давления не завершено\n\n",
-                       1:("Измерение температуры и влажности не завершено\n\n"),
-                       2:("Ошибка контрольной суммы датчика температуры и влажности\n\n"),
-                       3:("Выход за допустимый диапазон измерения давления\n\n"),
-                       4:("Выход за допустимый диапазон измерения температуры\n\n"),
-                       5:("Выход за допустимый диапазон измерения влажности\n\n"),
-                       6:("Ошибка в работе интерфейса I2C\n\n")
+        self.dict_errors = {0:"Ошибка измерения P\n",
+                       1:("Ошибка измерения T и RH\n"),
+                       2:("Ошибка контрольной суммы датчика T и RH\n"),
+                       3:("Выход за допустимый диапазон измерения P\n"),
+                       4:("Выход за допустимый диапазон измерения T\n"),
+                       5:("Выход за допустимый диапазон измерения RH\n"),
+                       6:("Ошибка в работе интерфейса I2C\n")
                        }
 
         self.dict_valid_data = {7: self.textEdit_2,
@@ -49,6 +53,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
     def update_value(self,value):
         try:
+            error = ""
             self.textEdit_5.setText("")
             if len(value) == 1:
                 if 1 or 2 or 3 or 4 in int(value):
@@ -57,37 +62,43 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     self.textEdit_4.setStyleSheet("background-color: red;")
                     self.textEdit_5.setText(value)
 
-            elif "Modbus Error" in value:
-                self.stop()
-                self.QMessage(value)
+            elif "No response" in value or "No Response" in value:
+                self.textEdit_2.setStyleSheet("background-color: red;")
+                self.textEdit_3.setStyleSheet("background-color: red;")
+                self.textEdit_4.setStyleSheet("background-color: red;")
+                date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
+                self.display_errors(f"{date_time} Отсутствует связь по Modbus" + '\n')
+                self.ModbusConnection = False
 
+                return
+
+            elif "Modbus Error" in value:
+                self.QMessage(value)
+                time.sleep(3)
+                self.stop()
             else:
+                if not self.ModbusConnection:
+                    date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
+                    self.display_errors(f"{date_time} Связь по Modbus установлена" + '\n')
+                    self.ModbusConnection = True
+
                 value = (value.strip('][').split(', '))
                 self.textEdit_2.setText(value[1])
                 self.textEdit_3.setText(value[2])
                 self.textEdit_4.setText(value[3])
 
-                error = ""
                 for i in range(7):
                     if (int(value[0]) & 1 << i):
-                        error += self.dict_errors[i]
+                        date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
+                        error +=f'{date_time} {self.dict_errors[i]}'
 
                 for i in range(7, 10):
-                    if (int(value[0]) & 1 << i):
+                    if not((int(value[0]) & 1 << i)):
                         self.dict_valid_data[i].setStyleSheet("background-color: red;")
                     else:
                         self.dict_valid_data[i].setStyleSheet("background-color: green;")
-
                 if error !="":
-                    date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
-                    error = f'{date_time}\n{error}'
-                    self.log_error(error)
-                    for i in self.text_edit_box[::-1]:
-                        self.text_edit_errors+=i
-                    self.textEdit_1.setText(self.text_edit_errors)
-                    with open("logs.txt", "a") as logs:
-                        logs.write(error + '\n')
-                self.text_edit_errors = ""
+                    self.display_errors(error)
 
         except:
             self.stop()
@@ -96,7 +107,16 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def log_error(self, error_message):
         self.text_edit_box.append(error_message)
         if len(self.text_edit_box) > self.max_errors:
-            self.text_edit_box.pop(0)  # Удаляем самую старую ошибку, если превышен лимит
+            self.text_edit_box.pop(0)
+
+    def display_errors(self,error):
+        self.log_error(error)
+        for i in self.text_edit_box[::-1]:
+            self.text_edit_errors += i
+        self.textEdit_1.setText(self.text_edit_errors)
+        with open("logs.txt", "a") as logs:
+            logs.write(error + '\n')
+        self.text_edit_errors = ""
 
     def QMessage(self,error):
         msg = QMessageBox()
@@ -111,12 +131,18 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def stop(self):
         self.thread.isWork = False
         self.isConnection = False
-        self.modbus.client.close()
         self.pushButton_1.setEnabled(False)
         self.pushButton_2.setEnabled(True)
         self.pushButton_3.setEnabled(False)
         self.comboBox.setEnabled(True)
-        print("Client close")
+        time.sleep(3)
+
+        if (self.modbus.client.is_socket_open()):
+            try:
+                self.modbus.client.close()
+            except:
+                pass
+
     def choose_port(self):
         self.port =  self.comboBox.currentText()
         self.pushButton_1.setEnabled(True)
@@ -138,6 +164,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 self.pushButton_1.setEnabled(False)
                 self.pushButton_2.setEnabled(True)
                 self.comboBox.setEnabled(True)
+
             else:
                 self.thread.modbus = self.modbus
                 self.thread.isWork = True
