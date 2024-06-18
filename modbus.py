@@ -40,8 +40,10 @@ class ModbusRTU:
 
     def client_read_data(self):
         print("get and verify data")
+
         try:
             rr = self.client.read_input_registers(0, 4, slave=64)
+
         except ModbusException as exc:
             print(f"Received ModbusException({exc}) from library")
             self.client.close()
@@ -56,7 +58,7 @@ class ModbusRTU:
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
             # THIS IS NOT A PYTHON EXCEPTION, but a valid modbus message
-            # self.client.close()
+            self.client.close()
             # print("Client close")
             return rr
 

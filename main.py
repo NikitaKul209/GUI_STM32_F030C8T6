@@ -19,24 +19,26 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.text_edit_errors = ""
         self.text_edit_iteration = 0
         self.text_edit_box=[]
-        self.max_errors = 10
+        self.max_errors = 15
         self.ModbusConnection = False
 
         self.modbus = None
         self.isConnection = False
         self.thread = Worker()
         self.thread.sinout.connect(self.update_value)
-        self.thread.start()
-
         self.pushButton_1.setEnabled(False)
         self.pushButton_3.setEnabled(False)
+        self.textEdit_1.setReadOnly(True)
+        self.textEdit_2.setReadOnly(True)
+        self.textEdit_3.setReadOnly(True)
+        self.textEdit_4.setReadOnly(True)
+        self.textEdit_5.setReadOnly(True)
+        self.setWindowFlags(QtCore.Qt.MSWindowsFixedSizeDialogHint)
 
         ports = serial.tools.list_ports.comports()
         for port in ports:
             self.comboBox.addItem(str(port.name))
         self.port = 0
-
-
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
                        2:("Ошибка контрольной суммы датчика T и RH\n"),
@@ -45,36 +47,27 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                        5:("Выход за допустимый диапазон измерения RH\n"),
                        6:("Ошибка в работе интерфейса I2C\n")
                        }
-
         self.dict_valid_data = {7: self.textEdit_2,
                            8: self.textEdit_3,
                            9: self.textEdit_4}
-
 
     def update_value(self,value):
         try:
             error = ""
             self.textEdit_5.setText("")
             if len(value) == 1:
-                if 1 or 2 or 3 or 4 in int(value):
-                    self.textEdit_2.setStyleSheet("background-color: red;")
-                    self.textEdit_3.setStyleSheet("background-color: red;")
-                    self.textEdit_4.setStyleSheet("background-color: red;")
-                    self.textEdit_5.setText(value)
+                self.set_text_edit_color_red("red", "red", "red")
+                self.textEdit_5.setText(value)
 
             elif "No response" in value or "No Response" in value:
-                self.textEdit_2.setStyleSheet("background-color: red;")
-                self.textEdit_3.setStyleSheet("background-color: red;")
-                self.textEdit_4.setStyleSheet("background-color: red;")
+                self.set_text_edit_color_red("red","red","red")
                 date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
                 self.display_errors(f"{date_time} Отсутствует связь по Modbus" + '\n')
                 self.ModbusConnection = False
-
                 return
 
             elif "Modbus Error" in value:
                 self.QMessage(value)
-                time.sleep(3)
                 self.stop()
             else:
                 if not self.ModbusConnection:
@@ -109,6 +102,12 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         if len(self.text_edit_box) > self.max_errors:
             self.text_edit_box.pop(0)
 
+
+    def set_text_edit_color_red(self,color1, color2, color3):
+        self.textEdit_2.setStyleSheet(f'background-color: {color1};')
+        self.textEdit_3.setStyleSheet(f'background-color: {color2};')
+        self.textEdit_4.setStyleSheet(f'background-color: {color3};')
+
     def display_errors(self,error):
         self.log_error(error)
         for i in self.text_edit_box[::-1]:
@@ -129,14 +128,14 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.pushButton_2.clicked.connect(self.choose_port)
         self.pushButton_3.clicked.connect(self.stop)
     def stop(self):
-        self.thread.isWork = False
+        # self.thread.isWork = False
+        self.thread.terminate()
+        self.thread.wait()
         self.isConnection = False
         self.pushButton_1.setEnabled(False)
         self.pushButton_2.setEnabled(True)
         self.pushButton_3.setEnabled(False)
         self.comboBox.setEnabled(True)
-        time.sleep(3)
-
         if (self.modbus.client.is_socket_open()):
             try:
                 self.modbus.client.close()
@@ -154,7 +153,6 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.thread.isWork = True
             self.pushButton_1.setEnabled(False)
             self.pushButton_3.setEnabled(True)
-
         else:
             self.modbus = ModbusRTU()
             self.isConnection = self.modbus.run_sync_simple_client(self.port)
@@ -167,6 +165,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
             else:
                 self.thread.modbus = self.modbus
+                self.thread.start()
                 self.thread.isWork = True
                 self.pushButton_1.setEnabled(False)
                 self.pushButton_3.setEnabled(True)

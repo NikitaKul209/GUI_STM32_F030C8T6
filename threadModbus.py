@@ -12,16 +12,17 @@ class Worker(QThread):
         self.modbus = None
         self.isWork = False
 
+
     def run(self):
         while True:
-            while self.isWork:
-                value = self.modbus.client_read_data()
-                if isinstance(value, pymodbus.exceptions.ModbusIOException):
-                    self.sinout.emit(str(value))
-                elif isinstance(value, pymodbus.pdu.ExceptionResponse):
+            # while self.isWork:
+            value = self.modbus.client_read_data()
+            if isinstance(value, pymodbus.exceptions.ModbusIOException):
+                self.sinout.emit(str(value))
+            elif isinstance(value, pymodbus.pdu.ExceptionResponse):
 
-                    self.sinout.emit(str(value.exception_code))
-                else:
-                    self.sinout.emit(str(value.registers))
+                self.sinout.emit(str(value.exception_code))
+            else:
+                self.sinout.emit(str(value.registers))
 
-                self.sleep(1)
+            self.sleep(1)
