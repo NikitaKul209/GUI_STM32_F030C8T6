@@ -12,14 +12,10 @@ class ModbusRTU:
     def __init__(self):
         self.client = None
 
-
     def run_sync_simple_client(self,port, framer=Framer.SOCKET.RTU):
         """Run sync client."""
         # activate debugging
         # pymodbus_apply_logging_config("DEBUG")
-
-        print("get client")
-
 
         self.client = ModbusClient.ModbusSerialClient(
             port,
@@ -34,12 +30,10 @@ class ModbusRTU:
             stopbits=1,
             handle_local_echo=False,
         )
-        print("connect to server")
 
         return self.client.connect()
 
     def client_read_data(self):
-        print("get and verify data")
 
         try:
             rr = self.client.read_input_registers(0, 4, slave=64)
@@ -47,19 +41,16 @@ class ModbusRTU:
         except ModbusException as exc:
             print(f"Received ModbusException({exc}) from library")
             self.client.close()
-            # print("Client close")
+
             return exc
         if rr.isError():
             print(f"Received Modbus library error({rr})")
-
             self.client.close()
-            # print("Client close")
             return rr
         if isinstance(rr, ExceptionResponse):
             print(f"Received Modbus library exception ({rr})")
             # THIS IS NOT A PYTHON EXCEPTION, but a valid modbus message
             self.client.close()
-            # print("Client close")
             return rr
 
         return rr

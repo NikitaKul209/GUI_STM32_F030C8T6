@@ -1,45 +1,41 @@
-import time
-import threading
-import pymodbus.client.serial
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from form import Ui_MainWindow
-import sys
-import serial
 import serial.tools.list_ports
-from  modbus import ModbusRTU
 from threadModbus import Worker
+from  modbus import ModbusRTU
 import datetime
+import serial
+import sys
+import os
 
 class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        # self.setWindowIcon(QtGui.QIcon("Kurchatov_Institute_logo.svg.png"))
+        if os.path.isfile("Kurchatov_Institute_logo.png"):
+            self.setWindowIcon(QtGui.QIcon("Kurchatov_Institute_logo.png"))
         self.functions()
         self.text_edit_errors = ""
         self.text_edit_iteration = 0
         self.text_edit_box=[]
         self.max_errors = 15
         self.ModbusConnection = False
-
         self.modbus = None
         self.isConnection = False
         self.thread = Worker()
         self.thread.sinout.connect(self.update_value)
+
         self.pushButton_1.setEnabled(False)
         self.pushButton_3.setEnabled(False)
-        self.textEdit_1.setReadOnly(True)
-        self.textEdit_2.setReadOnly(True)
-        self.textEdit_3.setReadOnly(True)
-        self.textEdit_4.setReadOnly(True)
-        self.textEdit_5.setReadOnly(True)
+
         self.setWindowFlags(QtCore.Qt.MSWindowsFixedSizeDialogHint)
 
         ports = serial.tools.list_ports.comports()
         for port in ports:
             self.comboBox.addItem(str(port.name))
         self.port = 0
+        
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
                        2:("Ошибка контрольной суммы датчика T и RH\n"),
