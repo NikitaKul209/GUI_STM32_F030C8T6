@@ -15,6 +15,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        # self.setWindowIcon(QtGui.QIcon("Kurchatov_Institute_logo.svg.png"))
         self.functions()
         self.text_edit_errors = ""
         self.text_edit_iteration = 0
@@ -60,7 +61,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 self.textEdit_5.setText(value)
 
             elif "No response" in value or "No Response" in value:
-                self.set_text_edit_color_red("red","red","red")
+                self.set_text_edit_color("red","red","red")
                 date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
                 self.display_errors(f"{date_time} Отсутствует связь по Modbus" + '\n')
                 self.ModbusConnection = False
@@ -76,9 +77,9 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     self.ModbusConnection = True
 
                 value = (value.strip('][').split(', '))
-                self.textEdit_2.setText(value[1])
-                self.textEdit_3.setText(value[2])
-                self.textEdit_4.setText(value[3])
+                self.textEdit_2.setText(str(int(value[1])/10))
+                self.textEdit_3.setText(str(int(value[2])/10))
+                self.textEdit_4.setText(str(int(value[3])/10))
 
                 for i in range(7):
                     if (int(value[0]) & 1 << i):
@@ -103,7 +104,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.text_edit_box.pop(0)
 
 
-    def set_text_edit_color_red(self,color1, color2, color3):
+    def set_text_edit_color(self,color1, color2, color3):
         self.textEdit_2.setStyleSheet(f'background-color: {color1};')
         self.textEdit_3.setStyleSheet(f'background-color: {color2};')
         self.textEdit_4.setStyleSheet(f'background-color: {color3};')
@@ -128,10 +129,10 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.pushButton_2.clicked.connect(self.choose_port)
         self.pushButton_3.clicked.connect(self.stop)
     def stop(self):
-        # self.thread.isWork = False
         self.thread.terminate()
         self.thread.wait()
         self.isConnection = False
+        self.ModbusConnection = False
         self.pushButton_1.setEnabled(False)
         self.pushButton_2.setEnabled(True)
         self.pushButton_3.setEnabled(False)
@@ -150,7 +151,6 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
     def run_modbus(self):
         if self.isConnection:
-            self.thread.isWork = True
             self.pushButton_1.setEnabled(False)
             self.pushButton_3.setEnabled(True)
         else:
