@@ -27312,3 +27312,1288 @@
 
 19.06.2024 15:56:35 Связь по Modbus установлена
 
+19.06.2024 16:28:39 Связь по Modbus установлена
+
+19.06.2024 16:28:54 Связь по Modbus установлена
+
+19.06.2024 16:29:11 Отсутствует связь по Modbus
+
+21.06.2024 11:09:54 Связь по Modbus установлена
+
+21.06.2024 11:11:48 Связь по Modbus установлена
+
+21.06.2024 11:11:55 Связь по Modbus установлена
+
+21.06.2024 11:13:14 Связь по Modbus установлена
+
+21.06.2024 11:35:28 Связь по Modbus установлена
+
+21.06.2024 11:35:48 Связь по Modbus установлена
+
+21.06.2024 11:36:19 Связь по Modbus установлена
+
+21.06.2024 11:36:49 Связь по Modbus установлена
+
+21.06.2024 11:37:05 Связь по Modbus установлена
+
+21.06.2024 11:37:50 Связь по Modbus установлена
+
+21.06.2024 11:37:53 Связь по Modbus установлена
+
+21.06.2024 11:38:10 Связь по Modbus установлена
+
+21.06.2024 11:40:36 Связь по Modbus установлена
+
+21.06.2024 11:48:46 Связь по Modbus установлена
+
+21.06.2024 11:51:14 Связь по Modbus установлена
+
+21.06.2024 11:53:18 Связь по Modbus установлена
+
+21.06.2024 12:02:05 Связь по Modbus установлена
+
+21.06.2024 12:03:44 Связь по Modbus установлена
+
+21.06.2024 12:03:55 Связь по Modbus установлена
+
+21.06.2024 12:05:50 Связь по Modbus установлена
+
+21.06.2024 12:05:54 Связь по Modbus установлена
+
+21.06.2024 12:05:55 Связь по Modbus установлена
+
+21.06.2024 12:19:20 Связь по Modbus установлена
+
+21.06.2024 12:19:29 Связь по Modbus установлена
+
+21.06.2024 12:22:32 Связь по Modbus установлена
+
+21.06.2024 12:28:45 Связь по Modbus установлена
+
+21.06.2024 12:31:05 Связь по Modbus установлена
+
+21.06.2024 12:32:14 Связь по Modbus установлена
+
+21.06.2024 12:32:36 Связь по Modbus установлена
+
+21.06.2024 12:35:13 Связь по Modbus установлена
+
+21.06.2024 12:35:17 Связь по Modbus установлена
+
+21.06.2024 12:48:51 Связь по Modbus установлена
+
+21.06.2024 12:49:00 Отсутствует связь по Modbus
+
+21.06.2024 12:49:02 Связь по Modbus установлена
+
+21.06.2024 13:07:51 Связь по Modbus установлена
+
+21.06.2024 13:08:02 Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+
+21.06.2024 13:08:09 Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+
+21.06.2024 13:08:17 Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+
+21.06.2024 13:08:18 Связь по Modbus установлена
+
+21.06.2024 13:36:00 Связь по Modbus установлена
+21.06.2024 13:36:11 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 13:36:18 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:36:26 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:36:33 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:36:40 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:36:47 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:36:54 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:37:02 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:37:09 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:37:16 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:37:23 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 13:37:24 Связь по Modbus установлена
+21.06.2024 13:38:09 Связь по Modbus установлена
+21.06.2024 13:38:13 Связь по Modbus установлена
+21.06.2024 13:39:10 Связь по Modbus установлена
+21.06.2024 13:39:15 Связь по Modbus установлена
+21.06.2024 13:39:20 Связь по Modbus установлена
+21.06.2024 13:39:44 Связь по Modbus установлена
+21.06.2024 13:40:53 Связь по Modbus установлена
+21.06.2024 13:41:45 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:46 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:47 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:48 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:49 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:51 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:52 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:53 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:54 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:55 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:56 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:57 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:58 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:41:59 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:00 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:01 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:03 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:04 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:05 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:06 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:07 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:08 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:09 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:10 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:11 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:12 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:13 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:14 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:16 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:17 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:18 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:19 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:20 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:21 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:22 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:23 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:24 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:25 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:26 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:28 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:29 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:30 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:31 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:32 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:33 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:34 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:35 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:36 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:37 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:38 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:40 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:41 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:42 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:43 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:44 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:45 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:46 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:47 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:48 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:49 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:50 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:52 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:53 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:54 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:55 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:56 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:57 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:58 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:42:59 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:00 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:01 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:02 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:04 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:05 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:06 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:07 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:08 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:09 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:10 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:11 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:12 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:13 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:14 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 13:43:16 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:08:15 Связь по Modbus установлена
+21.06.2024 14:08:34 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:08:49 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:08:56 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:03 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:10 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:17 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:25 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:32 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:39 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:46 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:09:53 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:00 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:08 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:15 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:22 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:29 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:44 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:51 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:10:58 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:05 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:12 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:20 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:27 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:34 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:41 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:48 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:11:55 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:03 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:10 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:17 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:24 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:31 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:39 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:46 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:12:53 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:13:00 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:13:07 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:13:15 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:13:16 Связь по Modbus установлена
+21.06.2024 14:15:25 Связь по Modbus установлена
+21.06.2024 14:15:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:15:44 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:15:51 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:15:58 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:16:05 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:16:12 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:16:19 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:16:21 Связь по Modbus установлена
+21.06.2024 14:16:26 Связь по Modbus установлена
+21.06.2024 14:16:30 Связь по Modbus установлена
+21.06.2024 14:16:32 Связь по Modbus установлена
+21.06.2024 14:16:35 Связь по Modbus установлена
+21.06.2024 14:16:38 Связь по Modbus установлена
+21.06.2024 14:26:25 Связь по Modbus установлена
+21.06.2024 14:26:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:26:44 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:26:45 Связь по Modbus установлена
+21.06.2024 14:26:57 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:27:59 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:28:00 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:01 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:03 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:04 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:05 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:06 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:07 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:08 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:09 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:10 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:11 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:12 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:13 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:14 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:15 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:16 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:18 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:19 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:20 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:21 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:22 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:23 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:24 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:25 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:26 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:27 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:28 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 14:28:31 Связь по Modbus установлена
+21.06.2024 14:41:40 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:44:32 Связь по Modbus установлена
+21.06.2024 14:44:54 Связь по Modbus установлена
+21.06.2024 14:45:07 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:48:16 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:48:23 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:48:30 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 14:53:55 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 14:58:22 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:01:09 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:02:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:02:42 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:02:48 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:02:54 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:00 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:06 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:12 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:18 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:24 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:30 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:36 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:42 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:48 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:03:55 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:04:01 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM15:0]
+21.06.2024 15:14:03 Связь по Modbus установлена
+21.06.2024 15:15:19 Связь по Modbus установлена
+21.06.2024 15:15:19 Ошибка измерения P
+21.06.2024 15:15:20 Ошибка измерения P
+21.06.2024 15:15:21 Ошибка измерения P
+21.06.2024 15:15:22 Ошибка измерения P
+21.06.2024 15:15:23 Ошибка измерения P
+21.06.2024 15:15:24 Ошибка измерения P
+21.06.2024 15:15:25 Ошибка измерения P
+21.06.2024 15:15:26 Ошибка измерения P
+21.06.2024 15:15:27 Ошибка измерения P
+21.06.2024 15:15:28 Ошибка измерения P
+21.06.2024 15:15:29 Ошибка измерения P
+21.06.2024 15:15:30 Ошибка измерения P
+21.06.2024 15:15:32 Ошибка измерения P
+21.06.2024 15:15:33 Ошибка измерения P
+21.06.2024 15:15:36 Ошибка измерения P
+21.06.2024 15:15:37 Ошибка измерения P
+21.06.2024 15:15:38 Ошибка измерения P
+21.06.2024 15:15:39 Ошибка измерения P
+21.06.2024 15:15:40 Ошибка измерения P
+21.06.2024 15:15:41 Ошибка измерения P
+21.06.2024 15:15:42 Ошибка измерения P
+21.06.2024 15:15:43 Ошибка измерения P
+21.06.2024 15:15:44 Ошибка измерения P
+21.06.2024 15:15:46 Ошибка измерения P
+21.06.2024 15:15:47 Ошибка измерения P
+21.06.2024 15:15:48 Ошибка измерения P
+21.06.2024 15:15:49 Ошибка измерения P
+21.06.2024 15:15:50 Ошибка измерения P
+21.06.2024 15:15:51 Ошибка измерения P
+21.06.2024 15:15:52 Ошибка измерения P
+21.06.2024 15:15:53 Ошибка измерения P
+21.06.2024 15:15:54 Ошибка измерения P
+21.06.2024 15:15:55 Ошибка измерения P
+21.06.2024 15:15:56 Ошибка измерения P
+21.06.2024 15:15:57 Ошибка измерения P
+21.06.2024 15:15:58 Ошибка измерения P
+21.06.2024 15:16:00 Ошибка измерения P
+21.06.2024 15:16:01 Ошибка измерения P
+21.06.2024 15:16:02 Ошибка измерения P
+21.06.2024 15:16:03 Ошибка измерения P
+21.06.2024 15:16:04 Ошибка измерения P
+21.06.2024 15:16:05 Ошибка измерения P
+21.06.2024 15:16:06 Ошибка измерения P
+21.06.2024 15:16:07 Ошибка измерения P
+21.06.2024 15:16:08 Ошибка измерения P
+21.06.2024 15:16:09 Ошибка измерения P
+21.06.2024 15:16:10 Ошибка измерения P
+21.06.2024 15:16:11 Ошибка измерения P
+21.06.2024 15:16:12 Ошибка измерения P
+21.06.2024 15:16:13 Ошибка измерения P
+21.06.2024 15:16:15 Ошибка измерения P
+21.06.2024 15:16:16 Ошибка измерения P
+21.06.2024 15:16:17 Ошибка измерения P
+21.06.2024 15:16:18 Ошибка измерения P
+21.06.2024 15:16:19 Ошибка измерения P
+21.06.2024 15:16:20 Ошибка измерения P
+21.06.2024 15:16:21 Ошибка измерения P
+21.06.2024 15:16:22 Ошибка измерения P
+21.06.2024 15:16:23 Ошибка измерения P
+21.06.2024 15:16:24 Ошибка измерения P
+21.06.2024 15:16:25 Ошибка измерения P
+21.06.2024 15:16:26 Ошибка измерения P
+21.06.2024 15:16:27 Ошибка измерения P
+21.06.2024 15:16:28 Ошибка измерения P
+21.06.2024 15:16:30 Ошибка измерения P
+21.06.2024 15:16:31 Ошибка измерения P
+21.06.2024 15:16:32 Ошибка измерения P
+21.06.2024 15:16:33 Ошибка измерения P
+21.06.2024 15:16:34 Ошибка измерения P
+21.06.2024 15:16:35 Ошибка измерения P
+21.06.2024 15:16:36 Ошибка измерения P
+21.06.2024 15:16:37 Ошибка измерения P
+21.06.2024 15:16:38 Ошибка измерения P
+21.06.2024 15:16:39 Ошибка измерения P
+21.06.2024 15:16:40 Ошибка измерения P
+21.06.2024 15:16:41 Ошибка измерения P
+21.06.2024 15:16:42 Ошибка измерения P
+21.06.2024 15:16:44 Ошибка измерения P
+21.06.2024 15:16:45 Ошибка измерения P
+21.06.2024 15:16:46 Ошибка измерения P
+21.06.2024 15:16:47 Ошибка измерения P
+21.06.2024 15:16:48 Ошибка измерения P
+21.06.2024 15:16:49 Ошибка измерения P
+21.06.2024 15:16:50 Ошибка измерения P
+21.06.2024 15:16:51 Ошибка измерения P
+21.06.2024 15:16:52 Ошибка измерения P
+21.06.2024 15:16:53 Ошибка измерения P
+21.06.2024 15:16:54 Ошибка измерения P
+21.06.2024 15:16:55 Ошибка измерения P
+21.06.2024 15:16:56 Ошибка измерения P
+21.06.2024 15:16:58 Ошибка измерения P
+21.06.2024 15:16:59 Ошибка измерения P
+21.06.2024 15:17:00 Ошибка измерения P
+21.06.2024 15:17:01 Ошибка измерения P
+21.06.2024 15:17:02 Ошибка измерения P
+21.06.2024 15:17:03 Ошибка измерения P
+21.06.2024 15:17:04 Ошибка измерения P
+21.06.2024 15:17:05 Ошибка измерения P
+21.06.2024 15:17:06 Ошибка измерения P
+21.06.2024 15:17:07 Ошибка измерения P
+21.06.2024 15:17:08 Ошибка измерения P
+21.06.2024 15:17:09 Ошибка измерения P
+21.06.2024 15:17:10 Ошибка измерения P
+21.06.2024 15:17:11 Ошибка измерения P
+21.06.2024 15:17:13 Ошибка измерения P
+21.06.2024 15:17:14 Ошибка измерения P
+21.06.2024 15:17:15 Ошибка измерения P
+21.06.2024 15:17:16 Ошибка измерения P
+21.06.2024 15:17:17 Ошибка измерения P
+21.06.2024 15:17:18 Ошибка измерения P
+21.06.2024 15:17:19 Ошибка измерения P
+21.06.2024 15:17:20 Ошибка измерения P
+21.06.2024 15:17:21 Ошибка измерения P
+21.06.2024 15:17:22 Ошибка измерения P
+21.06.2024 15:17:23 Ошибка измерения P
+21.06.2024 15:17:24 Ошибка измерения P
+21.06.2024 15:17:25 Ошибка измерения P
+21.06.2024 15:17:27 Ошибка измерения P
+21.06.2024 15:17:28 Ошибка измерения P
+21.06.2024 15:17:29 Ошибка измерения P
+21.06.2024 15:17:30 Ошибка измерения P
+21.06.2024 15:17:31 Ошибка измерения P
+21.06.2024 15:17:32 Ошибка измерения P
+21.06.2024 15:17:33 Ошибка измерения P
+21.06.2024 15:17:34 Ошибка измерения P
+21.06.2024 15:17:35 Ошибка измерения P
+21.06.2024 15:17:36 Ошибка измерения P
+21.06.2024 15:17:37 Ошибка измерения P
+21.06.2024 15:17:38 Ошибка измерения P
+21.06.2024 15:17:39 Ошибка измерения P
+21.06.2024 15:17:40 Ошибка измерения P
+21.06.2024 15:17:42 Ошибка измерения P
+21.06.2024 15:17:43 Ошибка измерения P
+21.06.2024 15:17:44 Ошибка измерения P
+21.06.2024 15:17:45 Ошибка измерения P
+21.06.2024 15:17:46 Ошибка измерения P
+21.06.2024 15:17:47 Ошибка измерения P
+21.06.2024 15:17:48 Ошибка измерения P
+21.06.2024 15:17:49 Ошибка измерения P
+21.06.2024 15:17:50 Ошибка измерения P
+21.06.2024 15:17:51 Ошибка измерения P
+21.06.2024 15:17:52 Ошибка измерения P
+21.06.2024 15:17:53 Ошибка измерения P
+21.06.2024 15:17:54 Ошибка измерения P
+21.06.2024 15:17:55 Ошибка измерения P
+21.06.2024 15:17:57 Ошибка измерения P
+21.06.2024 15:17:58 Ошибка измерения P
+21.06.2024 15:17:59 Ошибка измерения P
+21.06.2024 15:18:00 Ошибка измерения P
+21.06.2024 15:18:01 Ошибка измерения P
+21.06.2024 15:18:02 Ошибка измерения P
+21.06.2024 15:18:03 Ошибка измерения P
+21.06.2024 15:18:04 Ошибка измерения P
+21.06.2024 15:18:05 Ошибка измерения P
+21.06.2024 15:18:06 Ошибка измерения P
+21.06.2024 15:18:07 Ошибка измерения P
+21.06.2024 15:18:08 Ошибка измерения P
+21.06.2024 15:18:09 Ошибка измерения P
+21.06.2024 15:18:11 Ошибка измерения P
+21.06.2024 15:18:12 Ошибка измерения P
+21.06.2024 15:18:13 Ошибка измерения P
+21.06.2024 15:18:14 Ошибка измерения P
+21.06.2024 15:18:15 Ошибка измерения P
+21.06.2024 15:18:16 Ошибка измерения P
+21.06.2024 15:18:17 Ошибка измерения P
+21.06.2024 15:18:18 Ошибка измерения P
+21.06.2024 15:18:19 Ошибка измерения P
+21.06.2024 15:18:20 Ошибка измерения P
+21.06.2024 15:18:21 Ошибка измерения P
+21.06.2024 15:18:22 Ошибка измерения P
+21.06.2024 15:18:23 Ошибка измерения P
+21.06.2024 15:18:25 Ошибка измерения P
+21.06.2024 15:18:26 Ошибка измерения P
+21.06.2024 15:18:27 Ошибка измерения P
+21.06.2024 15:18:28 Ошибка измерения P
+21.06.2024 15:18:29 Ошибка измерения P
+21.06.2024 15:18:30 Ошибка измерения P
+21.06.2024 15:18:31 Ошибка измерения P
+21.06.2024 15:18:32 Ошибка измерения P
+21.06.2024 15:18:33 Ошибка измерения P
+21.06.2024 15:18:34 Ошибка измерения P
+21.06.2024 15:18:35 Ошибка измерения P
+21.06.2024 15:18:36 Ошибка измерения P
+21.06.2024 15:18:37 Ошибка измерения P
+21.06.2024 15:18:38 Ошибка измерения P
+21.06.2024 15:18:40 Ошибка измерения P
+21.06.2024 15:18:41 Ошибка измерения P
+21.06.2024 15:18:42 Ошибка измерения P
+21.06.2024 15:18:43 Ошибка измерения P
+21.06.2024 15:18:44 Ошибка измерения P
+21.06.2024 15:18:45 Ошибка измерения P
+21.06.2024 15:18:46 Ошибка измерения P
+21.06.2024 15:18:47 Ошибка измерения P
+21.06.2024 15:18:48 Ошибка измерения P
+21.06.2024 15:18:49 Ошибка измерения P
+21.06.2024 15:18:50 Ошибка измерения P
+21.06.2024 15:18:51 Ошибка измерения P
+21.06.2024 15:18:52 Ошибка измерения P
+21.06.2024 15:18:53 Ошибка измерения P
+21.06.2024 15:18:55 Ошибка измерения P
+21.06.2024 15:18:56 Ошибка измерения P
+21.06.2024 15:18:57 Ошибка измерения P
+21.06.2024 15:18:58 Ошибка измерения P
+21.06.2024 15:18:59 Ошибка измерения P
+21.06.2024 15:19:00 Ошибка измерения P
+21.06.2024 15:19:01 Ошибка измерения P
+21.06.2024 15:19:02 Ошибка измерения P
+21.06.2024 15:19:03 Ошибка измерения P
+21.06.2024 15:19:04 Ошибка измерения P
+21.06.2024 15:19:05 Ошибка измерения P
+21.06.2024 15:19:06 Ошибка измерения P
+21.06.2024 15:19:07 Ошибка измерения P
+21.06.2024 15:19:09 Ошибка измерения P
+21.06.2024 15:19:10 Ошибка измерения P
+21.06.2024 15:19:11 Ошибка измерения P
+21.06.2024 15:19:12 Ошибка измерения P
+21.06.2024 15:19:13 Ошибка измерения P
+21.06.2024 15:19:14 Ошибка измерения P
+21.06.2024 15:19:15 Ошибка измерения P
+21.06.2024 15:19:16 Ошибка измерения P
+21.06.2024 15:19:17 Ошибка измерения P
+21.06.2024 15:19:18 Ошибка измерения P
+21.06.2024 15:19:19 Ошибка измерения P
+21.06.2024 15:19:20 Ошибка измерения P
+21.06.2024 15:19:21 Ошибка измерения P
+21.06.2024 15:19:22 Ошибка измерения P
+21.06.2024 15:19:24 Ошибка измерения P
+21.06.2024 15:19:25 Ошибка измерения P
+21.06.2024 15:19:26 Ошибка измерения P
+21.06.2024 15:19:27 Ошибка измерения P
+21.06.2024 15:19:28 Ошибка измерения P
+21.06.2024 15:19:29 Ошибка измерения P
+21.06.2024 15:19:30 Ошибка измерения P
+21.06.2024 15:19:31 Ошибка измерения P
+21.06.2024 15:19:32 Ошибка измерения P
+21.06.2024 15:19:33 Ошибка измерения P
+21.06.2024 15:19:34 Ошибка измерения P
+21.06.2024 15:19:35 Ошибка измерения P
+21.06.2024 15:19:36 Ошибка измерения P
+21.06.2024 15:19:38 Ошибка измерения P
+21.06.2024 15:19:39 Ошибка измерения P
+21.06.2024 15:19:40 Ошибка измерения P
+21.06.2024 15:19:41 Ошибка измерения P
+21.06.2024 15:19:42 Ошибка измерения P
+21.06.2024 15:19:43 Ошибка измерения P
+21.06.2024 15:19:44 Ошибка измерения P
+21.06.2024 15:19:45 Ошибка измерения P
+21.06.2024 15:19:46 Ошибка измерения P
+21.06.2024 15:19:47 Ошибка измерения P
+21.06.2024 15:19:48 Ошибка измерения P
+21.06.2024 15:19:49 Ошибка измерения P
+21.06.2024 15:19:50 Ошибка измерения P
+21.06.2024 15:19:52 Ошибка измерения P
+21.06.2024 15:19:53 Ошибка измерения P
+21.06.2024 15:19:54 Ошибка измерения P
+21.06.2024 15:19:55 Ошибка измерения P
+21.06.2024 15:19:56 Ошибка измерения P
+21.06.2024 15:19:57 Ошибка измерения P
+21.06.2024 15:19:58 Ошибка измерения P
+21.06.2024 15:19:59 Ошибка измерения P
+21.06.2024 15:20:00 Ошибка измерения P
+21.06.2024 15:20:01 Ошибка измерения P
+21.06.2024 15:20:02 Ошибка измерения P
+21.06.2024 15:20:03 Ошибка измерения P
+21.06.2024 15:20:04 Ошибка измерения P
+21.06.2024 15:20:06 Ошибка измерения P
+21.06.2024 15:20:07 Ошибка измерения P
+21.06.2024 15:20:08 Ошибка измерения P
+21.06.2024 15:20:09 Ошибка измерения P
+21.06.2024 15:20:10 Ошибка измерения P
+21.06.2024 15:20:11 Ошибка измерения P
+21.06.2024 15:20:12 Ошибка измерения P
+21.06.2024 15:20:13 Ошибка измерения P
+21.06.2024 15:20:14 Ошибка измерения P
+21.06.2024 15:20:15 Ошибка измерения P
+21.06.2024 15:20:16 Ошибка измерения P
+21.06.2024 15:20:17 Ошибка измерения P
+21.06.2024 15:20:18 Ошибка измерения P
+21.06.2024 15:20:20 Ошибка измерения P
+21.06.2024 15:20:21 Ошибка измерения P
+21.06.2024 15:20:22 Ошибка измерения P
+21.06.2024 15:20:23 Ошибка измерения P
+21.06.2024 15:20:24 Ошибка измерения P
+21.06.2024 15:20:25 Ошибка измерения P
+21.06.2024 15:20:26 Ошибка измерения P
+21.06.2024 15:20:27 Ошибка измерения P
+21.06.2024 15:20:28 Ошибка измерения P
+21.06.2024 15:20:29 Ошибка измерения P
+21.06.2024 15:20:30 Ошибка измерения P
+21.06.2024 15:20:31 Ошибка измерения P
+21.06.2024 15:20:32 Ошибка измерения P
+21.06.2024 15:20:33 Ошибка измерения P
+21.06.2024 15:20:35 Ошибка измерения P
+21.06.2024 15:20:36 Ошибка измерения P
+21.06.2024 15:20:37 Ошибка измерения P
+21.06.2024 15:20:38 Ошибка измерения P
+21.06.2024 15:20:39 Ошибка измерения P
+21.06.2024 15:20:40 Ошибка измерения P
+21.06.2024 15:20:41 Ошибка измерения P
+21.06.2024 15:20:42 Ошибка измерения P
+21.06.2024 15:20:43 Ошибка измерения P
+21.06.2024 15:20:44 Ошибка измерения P
+21.06.2024 15:20:45 Ошибка измерения P
+21.06.2024 15:20:46 Ошибка измерения P
+21.06.2024 15:20:47 Ошибка измерения P
+21.06.2024 15:20:49 Ошибка измерения P
+21.06.2024 15:20:50 Ошибка измерения P
+21.06.2024 15:20:51 Ошибка измерения P
+21.06.2024 15:20:52 Ошибка измерения P
+21.06.2024 15:20:53 Ошибка измерения P
+21.06.2024 15:20:54 Ошибка измерения P
+21.06.2024 15:20:55 Ошибка измерения P
+21.06.2024 15:20:56 Ошибка измерения P
+21.06.2024 15:20:57 Ошибка измерения P
+21.06.2024 15:20:58 Ошибка измерения P
+21.06.2024 15:20:59 Ошибка измерения P
+21.06.2024 15:21:00 Ошибка измерения P
+21.06.2024 15:21:01 Ошибка измерения P
+21.06.2024 15:21:02 Ошибка измерения P
+21.06.2024 15:21:04 Ошибка измерения P
+21.06.2024 15:21:05 Ошибка измерения P
+21.06.2024 15:21:06 Ошибка измерения P
+21.06.2024 15:21:07 Ошибка измерения P
+21.06.2024 15:21:08 Ошибка измерения P
+21.06.2024 15:21:09 Ошибка измерения P
+21.06.2024 15:21:10 Ошибка измерения P
+21.06.2024 15:21:11 Ошибка измерения P
+21.06.2024 15:21:12 Ошибка измерения P
+21.06.2024 15:21:13 Ошибка измерения P
+21.06.2024 15:21:14 Ошибка измерения P
+21.06.2024 15:21:15 Ошибка измерения P
+21.06.2024 15:21:16 Ошибка измерения P
+21.06.2024 15:21:18 Ошибка измерения P
+21.06.2024 15:21:19 Ошибка измерения P
+21.06.2024 15:21:20 Ошибка измерения P
+21.06.2024 15:21:21 Ошибка измерения P
+21.06.2024 15:21:22 Ошибка измерения P
+21.06.2024 15:21:23 Ошибка измерения P
+21.06.2024 15:21:24 Ошибка измерения P
+21.06.2024 15:21:25 Ошибка измерения P
+21.06.2024 15:21:26 Ошибка измерения P
+21.06.2024 15:21:27 Ошибка измерения P
+21.06.2024 15:21:28 Ошибка измерения P
+21.06.2024 15:21:29 Ошибка измерения P
+21.06.2024 15:21:30 Ошибка измерения P
+21.06.2024 15:21:31 Ошибка измерения P
+21.06.2024 15:21:33 Ошибка измерения P
+21.06.2024 15:21:34 Ошибка измерения P
+21.06.2024 15:21:35 Ошибка измерения P
+21.06.2024 15:21:36 Ошибка измерения P
+21.06.2024 15:21:37 Ошибка измерения P
+21.06.2024 15:21:38 Ошибка измерения P
+21.06.2024 15:21:39 Ошибка измерения P
+21.06.2024 15:21:40 Ошибка измерения P
+21.06.2024 15:21:41 Ошибка измерения P
+21.06.2024 15:21:42 Ошибка измерения P
+21.06.2024 15:21:43 Ошибка измерения P
+21.06.2024 15:21:44 Ошибка измерения P
+21.06.2024 15:21:45 Ошибка измерения P
+21.06.2024 15:21:46 Ошибка измерения P
+21.06.2024 15:21:48 Ошибка измерения P
+21.06.2024 15:21:49 Ошибка измерения P
+21.06.2024 15:21:50 Ошибка измерения P
+21.06.2024 15:21:51 Ошибка измерения P
+21.06.2024 15:21:52 Ошибка измерения P
+21.06.2024 15:21:53 Ошибка измерения P
+21.06.2024 15:21:54 Ошибка измерения P
+21.06.2024 15:21:55 Ошибка измерения P
+21.06.2024 15:21:56 Ошибка измерения P
+21.06.2024 15:21:57 Ошибка измерения P
+21.06.2024 15:21:58 Ошибка измерения P
+21.06.2024 15:21:59 Ошибка измерения P
+21.06.2024 15:22:00 Ошибка измерения P
+21.06.2024 15:22:02 Ошибка измерения P
+21.06.2024 15:22:03 Ошибка измерения P
+21.06.2024 15:22:04 Ошибка измерения P
+21.06.2024 15:22:05 Ошибка измерения P
+21.06.2024 15:22:06 Ошибка измерения P
+21.06.2024 15:22:07 Ошибка измерения P
+21.06.2024 15:22:08 Ошибка измерения P
+21.06.2024 15:22:09 Ошибка измерения P
+21.06.2024 15:22:10 Ошибка измерения P
+21.06.2024 15:22:11 Ошибка измерения P
+21.06.2024 15:22:12 Ошибка измерения P
+21.06.2024 15:22:13 Ошибка измерения P
+21.06.2024 15:22:14 Ошибка измерения P
+21.06.2024 15:22:16 Ошибка измерения P
+21.06.2024 15:22:17 Ошибка измерения P
+21.06.2024 15:22:18 Ошибка измерения P
+21.06.2024 15:22:19 Ошибка измерения P
+21.06.2024 15:22:20 Ошибка измерения P
+21.06.2024 15:22:21 Ошибка измерения P
+21.06.2024 15:22:22 Ошибка измерения P
+21.06.2024 15:22:23 Ошибка измерения P
+21.06.2024 15:22:24 Ошибка измерения P
+21.06.2024 15:22:25 Ошибка измерения P
+21.06.2024 15:22:26 Ошибка измерения P
+21.06.2024 15:22:27 Ошибка измерения P
+21.06.2024 15:22:42 Ошибка измерения P
+21.06.2024 15:22:43 Ошибка измерения P
+21.06.2024 15:22:45 Ошибка измерения P
+21.06.2024 15:22:46 Ошибка измерения P
+21.06.2024 15:22:47 Ошибка измерения P
+21.06.2024 15:22:48 Ошибка измерения P
+21.06.2024 15:22:49 Ошибка измерения P
+21.06.2024 15:22:50 Ошибка измерения P
+21.06.2024 15:22:51 Ошибка измерения P
+21.06.2024 15:22:52 Ошибка измерения P
+21.06.2024 15:22:53 Ошибка измерения P
+21.06.2024 15:22:54 Ошибка измерения P
+21.06.2024 15:22:55 Ошибка измерения P
+21.06.2024 15:22:56 Ошибка измерения P
+21.06.2024 15:22:58 Ошибка измерения P
+21.06.2024 15:22:59 Ошибка измерения P
+21.06.2024 15:23:00 Ошибка измерения P
+21.06.2024 15:23:01 Ошибка измерения P
+21.06.2024 15:23:02 Ошибка измерения P
+21.06.2024 15:23:03 Ошибка измерения P
+21.06.2024 15:23:04 Ошибка измерения P
+21.06.2024 15:23:05 Ошибка измерения P
+21.06.2024 15:23:06 Ошибка измерения P
+21.06.2024 15:23:07 Ошибка измерения P
+21.06.2024 15:23:08 Ошибка измерения P
+21.06.2024 15:23:09 Ошибка измерения P
+21.06.2024 15:23:10 Ошибка измерения P
+21.06.2024 15:23:11 Ошибка измерения P
+21.06.2024 15:23:13 Ошибка измерения P
+21.06.2024 15:23:14 Ошибка измерения P
+21.06.2024 15:23:15 Ошибка измерения P
+21.06.2024 15:23:16 Ошибка измерения P
+21.06.2024 15:23:17 Ошибка измерения P
+21.06.2024 15:23:18 Ошибка измерения P
+21.06.2024 15:23:19 Ошибка измерения P
+21.06.2024 15:23:20 Ошибка измерения P
+21.06.2024 15:23:21 Ошибка измерения P
+21.06.2024 15:23:22 Ошибка измерения P
+21.06.2024 15:23:23 Ошибка измерения P
+21.06.2024 15:23:24 Ошибка измерения P
+21.06.2024 15:23:25 Ошибка измерения P
+21.06.2024 15:23:26 Ошибка измерения P
+21.06.2024 15:23:28 Ошибка измерения P
+21.06.2024 15:23:29 Ошибка измерения P
+21.06.2024 15:23:30 Ошибка измерения P
+21.06.2024 15:23:31 Ошибка измерения P
+21.06.2024 15:23:32 Ошибка измерения P
+21.06.2024 15:23:33 Ошибка измерения P
+21.06.2024 15:23:34 Ошибка измерения P
+21.06.2024 15:23:35 Ошибка измерения P
+21.06.2024 15:23:36 Ошибка измерения P
+21.06.2024 15:23:37 Ошибка измерения P
+21.06.2024 15:23:38 Ошибка измерения P
+21.06.2024 15:23:39 Ошибка измерения P
+21.06.2024 15:23:40 Ошибка измерения P
+21.06.2024 15:23:42 Ошибка измерения P
+21.06.2024 15:23:43 Ошибка измерения P
+21.06.2024 15:23:44 Ошибка измерения P
+21.06.2024 15:23:45 Ошибка измерения P
+21.06.2024 15:23:46 Ошибка измерения P
+21.06.2024 15:23:47 Ошибка измерения P
+21.06.2024 15:23:48 Ошибка измерения P
+21.06.2024 15:23:49 Ошибка измерения P
+21.06.2024 15:23:50 Ошибка измерения P
+21.06.2024 15:23:51 Ошибка измерения P
+21.06.2024 15:23:52 Ошибка измерения P
+21.06.2024 15:23:55 Ошибка измерения P
+21.06.2024 15:23:57 Ошибка измерения P
+21.06.2024 15:24:06 Ошибка измерения P
+21.06.2024 15:24:07 Ошибка измерения P
+21.06.2024 15:24:08 Ошибка измерения P
+21.06.2024 15:24:09 Ошибка измерения P
+21.06.2024 15:24:11 Ошибка измерения P
+21.06.2024 15:24:12 Ошибка измерения P
+21.06.2024 15:24:13 Ошибка измерения P
+21.06.2024 15:24:14 Ошибка измерения P
+21.06.2024 15:24:15 Ошибка измерения P
+21.06.2024 15:24:16 Ошибка измерения P
+21.06.2024 15:24:17 Ошибка измерения P
+21.06.2024 15:24:18 Ошибка измерения P
+21.06.2024 15:24:19 Ошибка измерения P
+21.06.2024 15:24:20 Ошибка измерения P
+21.06.2024 15:24:21 Ошибка измерения P
+21.06.2024 15:24:22 Ошибка измерения P
+21.06.2024 15:24:23 Ошибка измерения P
+21.06.2024 15:24:25 Ошибка измерения P
+21.06.2024 15:24:26 Ошибка измерения P
+21.06.2024 15:24:27 Ошибка измерения P
+21.06.2024 15:24:28 Ошибка измерения P
+21.06.2024 15:24:29 Ошибка измерения P
+21.06.2024 15:24:30 Ошибка измерения P
+21.06.2024 15:24:31 Ошибка измерения P
+21.06.2024 15:24:32 Ошибка измерения P
+21.06.2024 15:24:33 Ошибка измерения P
+21.06.2024 15:24:34 Ошибка измерения P
+21.06.2024 15:24:35 Ошибка измерения P
+21.06.2024 15:24:36 Ошибка измерения P
+21.06.2024 15:24:37 Ошибка измерения P
+21.06.2024 15:24:38 Ошибка измерения P
+21.06.2024 15:24:40 Ошибка измерения P
+21.06.2024 15:24:41 Ошибка измерения P
+21.06.2024 15:24:43 Связь по Modbus установлена
+21.06.2024 15:24:43 Ошибка измерения P
+21.06.2024 15:24:44 Ошибка измерения P
+21.06.2024 15:24:45 Ошибка измерения P
+21.06.2024 15:24:46 Ошибка измерения P
+21.06.2024 15:24:47 Ошибка измерения P
+21.06.2024 15:24:48 Ошибка измерения P
+21.06.2024 15:24:50 Ошибка измерения P
+21.06.2024 15:24:51 Ошибка измерения P
+21.06.2024 15:24:52 Ошибка измерения P
+21.06.2024 15:24:53 Ошибка измерения P
+21.06.2024 15:24:54 Ошибка измерения P
+21.06.2024 15:25:01 Ошибка измерения P
+21.06.2024 15:25:02 Ошибка измерения P
+21.06.2024 15:25:03 Ошибка измерения P
+21.06.2024 15:25:05 Ошибка измерения T и RH
+21.06.2024 15:25:06 Ошибка измерения T и RH
+21.06.2024 15:25:07 Ошибка измерения T и RH
+21.06.2024 15:25:08 Ошибка измерения T и RH
+21.06.2024 15:25:09 Ошибка измерения P
+21.06.2024 15:25:09 Ошибка измерения T и RH
+21.06.2024 15:25:10 Ошибка измерения P
+21.06.2024 15:25:10 Ошибка измерения T и RH
+21.06.2024 15:25:11 Ошибка измерения P
+21.06.2024 15:25:11 Ошибка измерения T и RH
+21.06.2024 15:25:12 Ошибка измерения P
+21.06.2024 15:25:12 Ошибка измерения T и RH
+21.06.2024 15:25:13 Ошибка измерения P
+21.06.2024 15:25:13 Ошибка измерения T и RH
+21.06.2024 15:25:14 Ошибка измерения P
+21.06.2024 15:25:14 Ошибка измерения T и RH
+21.06.2024 15:25:15 Ошибка измерения P
+21.06.2024 15:25:15 Ошибка измерения T и RH
+21.06.2024 15:25:16 Ошибка измерения P
+21.06.2024 15:25:16 Ошибка измерения T и RH
+21.06.2024 15:25:17 Ошибка измерения P
+21.06.2024 15:25:17 Ошибка измерения T и RH
+21.06.2024 15:25:18 Ошибка измерения P
+21.06.2024 15:25:18 Ошибка измерения T и RH
+21.06.2024 15:25:20 Ошибка измерения P
+21.06.2024 15:25:20 Ошибка измерения T и RH
+21.06.2024 15:25:21 Ошибка измерения P
+21.06.2024 15:25:21 Ошибка измерения T и RH
+21.06.2024 15:25:28 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:26:09 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 15:26:11 Связь по Modbus установлена
+21.06.2024 15:26:11 Ошибка измерения P
+21.06.2024 15:26:11 Ошибка измерения T и RH
+21.06.2024 15:26:11 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:11 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:11 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:11 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:11 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:12 Ошибка измерения P
+21.06.2024 15:26:12 Ошибка измерения T и RH
+21.06.2024 15:26:12 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:12 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:12 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:12 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:12 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:13 Ошибка измерения P
+21.06.2024 15:26:13 Ошибка измерения T и RH
+21.06.2024 15:26:13 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:13 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:13 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:13 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:13 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:14 Ошибка измерения P
+21.06.2024 15:26:14 Ошибка измерения T и RH
+21.06.2024 15:26:14 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:14 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:14 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:14 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:14 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:15 Ошибка измерения P
+21.06.2024 15:26:15 Ошибка измерения T и RH
+21.06.2024 15:26:15 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:15 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:15 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:15 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:15 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:16 Ошибка измерения P
+21.06.2024 15:26:16 Ошибка измерения T и RH
+21.06.2024 15:26:16 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:16 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:16 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:16 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:16 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:17 Ошибка измерения P
+21.06.2024 15:26:17 Ошибка измерения T и RH
+21.06.2024 15:26:17 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:17 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:17 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:17 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:17 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:18 Ошибка измерения P
+21.06.2024 15:26:18 Ошибка измерения T и RH
+21.06.2024 15:26:18 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:18 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:18 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:18 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:18 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:19 Ошибка измерения P
+21.06.2024 15:26:19 Ошибка измерения T и RH
+21.06.2024 15:26:19 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:19 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:19 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:19 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:19 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:20 Ошибка измерения P
+21.06.2024 15:26:20 Ошибка измерения T и RH
+21.06.2024 15:26:20 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:20 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:20 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:20 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:20 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:21 Ошибка измерения P
+21.06.2024 15:26:21 Ошибка измерения T и RH
+21.06.2024 15:26:21 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:21 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:21 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:21 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:21 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:22 Ошибка измерения P
+21.06.2024 15:26:22 Ошибка измерения T и RH
+21.06.2024 15:26:22 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:22 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:22 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:22 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:22 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:23 Ошибка измерения P
+21.06.2024 15:26:23 Ошибка измерения T и RH
+21.06.2024 15:26:23 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:23 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:23 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:23 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:23 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:24 Ошибка измерения P
+21.06.2024 15:26:24 Ошибка измерения T и RH
+21.06.2024 15:26:24 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:24 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:24 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:24 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:24 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:26 Ошибка измерения P
+21.06.2024 15:26:26 Ошибка измерения T и RH
+21.06.2024 15:26:26 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:26 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:26 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:26 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:26 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:27 Ошибка измерения P
+21.06.2024 15:26:27 Ошибка измерения T и RH
+21.06.2024 15:26:27 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:27 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:27 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:27 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:27 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:28 Ошибка измерения P
+21.06.2024 15:26:28 Ошибка измерения T и RH
+21.06.2024 15:26:28 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:28 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:28 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:28 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:28 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:29 Ошибка измерения P
+21.06.2024 15:26:29 Ошибка измерения T и RH
+21.06.2024 15:26:29 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:29 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:29 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:29 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:29 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:30 Ошибка измерения P
+21.06.2024 15:26:30 Ошибка измерения T и RH
+21.06.2024 15:26:30 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:30 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:30 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:30 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:30 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:31 Ошибка измерения P
+21.06.2024 15:26:31 Ошибка измерения T и RH
+21.06.2024 15:26:31 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:31 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:31 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:31 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:31 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:32 Ошибка измерения P
+21.06.2024 15:26:32 Ошибка измерения T и RH
+21.06.2024 15:26:32 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:32 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:32 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:32 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:32 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:33 Ошибка измерения P
+21.06.2024 15:26:33 Ошибка измерения T и RH
+21.06.2024 15:26:33 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:33 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:33 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:33 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:33 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:34 Ошибка измерения P
+21.06.2024 15:26:34 Ошибка измерения T и RH
+21.06.2024 15:26:34 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:34 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:34 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:34 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:34 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:35 Ошибка измерения P
+21.06.2024 15:26:35 Ошибка измерения T и RH
+21.06.2024 15:26:35 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:35 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:35 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:35 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:35 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:36 Ошибка измерения P
+21.06.2024 15:26:36 Ошибка измерения T и RH
+21.06.2024 15:26:36 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:26:36 Выход за допустимый диапазон измерения P
+21.06.2024 15:26:36 Выход за допустимый диапазон измерения T
+21.06.2024 15:26:36 Выход за допустимый диапазон измерения RH
+21.06.2024 15:26:36 Ошибка в работе интерфейса I2C
+21.06.2024 15:26:43 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:27:15 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 15:27:16 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:18 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:19 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:20 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:21 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:22 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:23 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:24 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:25 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:26 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:27 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:28 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:29 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:30 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:32 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:33 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:34 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:35 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:36 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:37 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:38 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:39 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:40 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:41 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:42 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:43 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:44 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:46 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:47 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:48 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:49 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:50 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:51 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:52 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:53 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:54 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:55 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:56 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:57 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:58 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:27:59 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:01 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:02 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:03 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:04 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:05 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:06 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:07 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:08 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:09 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:10 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:11 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:12 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:13 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:14 Ошибка связи по Modbus: Exception Response(132, 4, IllegalFunction)
+21.06.2024 15:28:20 Связь по Modbus установлена
+21.06.2024 15:29:59 Связь по Modbus установлена
+21.06.2024 15:30:20 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:30:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:30:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:30:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:30:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:30:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:31:51 Связь по Modbus установлена
+21.06.2024 15:31:56 Связь по Modbus установлена
+21.06.2024 15:32:10 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:32:16 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:32:22 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:33:01 Связь по Modbus установлена
+21.06.2024 15:36:14 Связь по Modbus установлена
+21.06.2024 15:36:28 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 15:36:34 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:36:40 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 15:37:06 Связь по Modbus установлена
+21.06.2024 15:38:10 Связь по Modbus установлена
+21.06.2024 15:38:37 Связь по Modbus установлена
+21.06.2024 15:38:50 Связь по Modbus установлена
+21.06.2024 15:40:53 Связь по Modbus установлена
+21.06.2024 15:41:55 Связь по Modbus установлена
+21.06.2024 15:41:55 Ошибка измерения P
+21.06.2024 15:41:56 Ошибка измерения P
+21.06.2024 15:41:57 Ошибка измерения P
+21.06.2024 15:41:58 Ошибка измерения P
+21.06.2024 15:41:59 Ошибка измерения P
+21.06.2024 15:42:00 Ошибка измерения P
+21.06.2024 15:42:01 Ошибка измерения P
+21.06.2024 15:42:02 Ошибка измерения P
+21.06.2024 15:42:03 Ошибка измерения P
+21.06.2024 15:42:04 Ошибка измерения P
+21.06.2024 15:42:06 Ошибка измерения P
+21.06.2024 15:42:07 Ошибка измерения P
+21.06.2024 15:42:08 Ошибка измерения P
+21.06.2024 15:42:09 Ошибка измерения P
+21.06.2024 15:42:10 Ошибка измерения P
+21.06.2024 15:42:11 Ошибка измерения P
+21.06.2024 15:42:12 Ошибка измерения P
+21.06.2024 15:42:13 Ошибка измерения P
+21.06.2024 15:42:14 Ошибка измерения P
+21.06.2024 15:42:15 Ошибка измерения P
+21.06.2024 15:42:16 Ошибка измерения P
+21.06.2024 15:42:17 Ошибка измерения P
+21.06.2024 15:42:18 Ошибка измерения P
+21.06.2024 15:42:19 Ошибка измерения P
+21.06.2024 15:42:21 Ошибка измерения P
+21.06.2024 15:42:22 Ошибка измерения P
+21.06.2024 15:42:23 Ошибка измерения P
+21.06.2024 15:42:24 Ошибка измерения P
+21.06.2024 15:42:25 Ошибка измерения P
+21.06.2024 15:42:26 Ошибка измерения P
+21.06.2024 15:42:27 Ошибка измерения P
+21.06.2024 15:42:28 Ошибка измерения P
+21.06.2024 15:42:29 Ошибка измерения P
+21.06.2024 15:42:30 Ошибка измерения P
+21.06.2024 15:42:31 Ошибка измерения P
+21.06.2024 15:42:32 Ошибка измерения P
+21.06.2024 15:42:33 Ошибка измерения P
+21.06.2024 15:42:35 Ошибка измерения P
+21.06.2024 15:42:36 Ошибка измерения P
+21.06.2024 15:42:37 Ошибка измерения P
+21.06.2024 15:42:38 Ошибка измерения P
+21.06.2024 15:42:39 Ошибка измерения P
+21.06.2024 15:42:40 Ошибка измерения P
+21.06.2024 15:42:41 Ошибка измерения P
+21.06.2024 15:42:42 Ошибка измерения P
+21.06.2024 15:42:43 Ошибка измерения P
+21.06.2024 15:42:44 Ошибка измерения P
+21.06.2024 15:42:45 Ошибка измерения P
+21.06.2024 15:42:46 Ошибка измерения P
+21.06.2024 15:42:47 Ошибка измерения P
+21.06.2024 15:42:48 Ошибка измерения P
+21.06.2024 15:42:50 Ошибка измерения P
+21.06.2024 15:42:51 Ошибка измерения P
+21.06.2024 15:42:52 Ошибка измерения P
+21.06.2024 15:42:53 Ошибка измерения P
+21.06.2024 15:42:54 Ошибка измерения P
+21.06.2024 15:42:55 Ошибка измерения P
+21.06.2024 15:42:56 Ошибка измерения P
+21.06.2024 15:42:57 Ошибка измерения P
+21.06.2024 15:42:58 Ошибка измерения P
+21.06.2024 15:42:59 Ошибка измерения P
+21.06.2024 15:43:00 Ошибка измерения P
+21.06.2024 15:43:01 Ошибка измерения P
+21.06.2024 15:43:02 Ошибка измерения P
+21.06.2024 15:43:04 Ошибка измерения P
+21.06.2024 15:43:05 Ошибка измерения P
+21.06.2024 15:43:06 Ошибка измерения P
+21.06.2024 15:43:07 Ошибка измерения P
+21.06.2024 15:43:08 Ошибка измерения P
+21.06.2024 15:43:09 Ошибка измерения P
+21.06.2024 15:43:10 Ошибка измерения P
+21.06.2024 15:43:11 Ошибка измерения P
+21.06.2024 15:43:12 Ошибка измерения P
+21.06.2024 15:43:13 Ошибка измерения P
+21.06.2024 15:43:14 Ошибка измерения P
+21.06.2024 15:43:15 Ошибка измерения P
+21.06.2024 15:43:16 Ошибка измерения P
+21.06.2024 15:43:17 Ошибка измерения P
+21.06.2024 15:43:19 Ошибка измерения P
+21.06.2024 15:43:20 Ошибка измерения P
+21.06.2024 15:43:21 Ошибка измерения P
+21.06.2024 15:43:22 Ошибка измерения P
+21.06.2024 15:43:23 Ошибка измерения P
+21.06.2024 15:43:24 Ошибка измерения P
+21.06.2024 15:43:25 Ошибка измерения P
+21.06.2024 15:43:26 Ошибка измерения P
+21.06.2024 15:43:27 Ошибка измерения P
+21.06.2024 15:43:28 Ошибка измерения P
+21.06.2024 15:43:29 Ошибка измерения P
+21.06.2024 15:43:30 Ошибка измерения P
+21.06.2024 15:43:31 Ошибка измерения P
+21.06.2024 15:43:32 Ошибка измерения P
+21.06.2024 15:43:34 Ошибка измерения P
+21.06.2024 15:43:35 Ошибка измерения P
+21.06.2024 15:43:36 Ошибка измерения P
+21.06.2024 15:43:37 Ошибка измерения P
+21.06.2024 15:43:38 Ошибка измерения P
+21.06.2024 15:43:39 Ошибка измерения P
+21.06.2024 15:43:40 Ошибка измерения P
+21.06.2024 15:43:41 Ошибка измерения P
+21.06.2024 15:43:42 Ошибка измерения P
+21.06.2024 15:43:43 Ошибка измерения P
+21.06.2024 15:43:44 Ошибка измерения P
+21.06.2024 15:43:45 Ошибка измерения P
+21.06.2024 15:43:46 Ошибка измерения P
+21.06.2024 15:43:47 Ошибка измерения P
+21.06.2024 15:43:49 Ошибка измерения T и RH
+21.06.2024 15:43:50 Ошибка измерения T и RH
+21.06.2024 15:43:51 Ошибка измерения T и RH
+21.06.2024 15:43:52 Ошибка измерения T и RH
+21.06.2024 15:43:53 Ошибка измерения T и RH
+21.06.2024 15:43:54 Ошибка измерения T и RH
+21.06.2024 15:43:55 Ошибка измерения T и RH
+21.06.2024 15:43:56 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:43:57 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:43:58 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:43:59 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:00 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:01 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:02 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:04 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:05 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:06 Ошибка контрольной суммы датчика T и RH
+21.06.2024 15:44:07 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:08 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:09 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:10 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:11 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:12 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:13 Выход за допустимый диапазон измерения P
+21.06.2024 15:44:14 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:15 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:16 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:17 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:19 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:20 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:21 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:22 Выход за допустимый диапазон измерения T
+21.06.2024 15:44:23 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:24 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:25 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:26 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:27 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:28 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:29 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:30 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:31 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:32 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:34 Выход за допустимый диапазон измерения RH
+21.06.2024 15:44:35 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:36 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:37 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:38 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:39 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:40 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:41 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:42 Ошибка в работе интерфейса I2C
+21.06.2024 15:44:45 Связь по Modbus установлена
+21.06.2024 15:59:42 Связь по Modbus установлена
+21.06.2024 16:00:00 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 16:00:07 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:15 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:22 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:29 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:43 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:51 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+21.06.2024 16:00:52 Связь по Modbus установлена
+21.06.2024 16:02:33 Связь по Modbus установлена
+21.06.2024 16:02:50 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+21.06.2024 16:02:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:23 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:28 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+21.06.2024 16:03:29 Связь по Modbus установлена
+21.06.2024 16:04:15 Связь по Modbus установлена

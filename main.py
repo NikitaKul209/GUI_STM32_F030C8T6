@@ -25,17 +25,17 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.isConnection = False
         self.thread = Worker()
         self.thread.sinout.connect(self.update_value)
-
-        self.pushButton_1.setEnabled(False)
-        self.pushButton_3.setEnabled(False)
-
+        self.ButtonStart.setEnabled(False)
+        self.ButtonStop.setEnabled(False)
         self.setWindowFlags(QtCore.Qt.MSWindowsFixedSizeDialogHint)
 
         ports = serial.tools.list_ports.comports()
+        self.ports_name = []
         for port in ports:
-            self.comboBox.addItem(str(port.name))
-        self.port = 0
-        
+            self.ports_name.append(port.name)
+            self.comboBox.addItem(str(port))
+        self.port = None
+
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
                        2:("Ошибка контрольной суммы датчика T и RH\n"),
@@ -44,42 +44,33 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                        5:("Выход за допустимый диапазон измерения RH\n"),
                        6:("Ошибка в работе интерфейса I2C\n")
                        }
-        self.dict_valid_data = {7: self.textEdit_2,
-                           8: self.textEdit_3,
-                           9: self.textEdit_4}
+        self.dict_valid_data = {7: self.textEdit_Pressure,
+                                8: self.textEdit_Temperature,
+                                9: self.textEdit_Humidity}
 
     def update_value(self,value):
         try:
             error = ""
-            self.textEdit_5.setText("")
-            if len(value) == 1:
-                self.set_text_edit_color_red("red", "red", "red")
-                self.textEdit_5.setText(value)
-
-            elif "No response" in value or "No Response" in value:
-                self.set_text_edit_color("red","red","red")
-                date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
-                self.display_errors(f"{date_time} Отсутствует связь по Modbus" + '\n')
-                self.ModbusConnection = False
-                return
-
-            elif "Modbus Error" in value:
-                self.QMessage(value)
-                self.stop()
+            error_excepions = ["Modbus Error" , "Exception" , "Exception Response"]
+            date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
+            for err in error_excepions:
+                if err in value:
+                    self.set_text_edit_color("red","red","red")
+                    self.display_errors(f"{date_time} Ошибка связи по Modbus (см. logs.txt)" + '\n',f"{date_time} Ошибка связи по Modbus: {value}" + '\n')
+                    self.ModbusConnection = False
+                    return
             else:
                 if not self.ModbusConnection:
-                    date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
-                    self.display_errors(f"{date_time} Связь по Modbus установлена" + '\n')
+                    self.display_errors(f"{date_time} Связь по Modbus установлена" + '\n',None)
                     self.ModbusConnection = True
 
                 value = (value.strip('][').split(', '))
-                self.textEdit_2.setText(str(int(value[1])/10))
-                self.textEdit_3.setText(str(int(value[2])/10))
-                self.textEdit_4.setText(str(int(value[3])/10))
+                self.textEdit_Pressure.setText(str(int(value[1]) / 10))
+                self.textEdit_Temperature.setText(str(int(value[2]) / 10))
+                self.textEdit_Humidity.setText(str(int(value[3]) / 10))
 
                 for i in range(7):
                     if (int(value[0]) & 1 << i):
-                        date_time = ((datetime.datetime.now()).strftime("%d.%m.%Y %H:%M:%S"))
                         error +=f'{date_time} {self.dict_errors[i]}'
 
                 for i in range(7, 10):
@@ -88,7 +79,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     else:
                         self.dict_valid_data[i].setStyleSheet("background-color: green;")
                 if error !="":
-                    self.display_errors(error)
+                    self.display_errors(error,None)
 
         except:
             self.stop()
@@ -101,17 +92,19 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
 
     def set_text_edit_color(self,color1, color2, color3):
-        self.textEdit_2.setStyleSheet(f'background-color: {color1};')
-        self.textEdit_3.setStyleSheet(f'background-color: {color2};')
-        self.textEdit_4.setStyleSheet(f'background-color: {color3};')
+        self.textEdit_Pressure.setStyleSheet(f'background-color: {color1};')
+        self.textEdit_Temperature.setStyleSheet(f'background-color: {color2};')
+        self.textEdit_Humidity.setStyleSheet(f'background-color: {color3};')
 
-    def display_errors(self,error):
+    def display_errors(self,error,log_error):
+        if log_error == None:
+            log_error = error
         self.log_error(error)
         for i in self.text_edit_box[::-1]:
             self.text_edit_errors += i
-        self.textEdit_1.setText(self.text_edit_errors)
+        self.textEdit_Messages.setText(self.text_edit_errors)
         with open("logs.txt", "a") as logs:
-            logs.write(error + '\n')
+            logs.write(log_error)
         self.text_edit_errors = ""
 
     def QMessage(self,error):
@@ -121,17 +114,16 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         msg.setIcon(QMessageBox.Warning)
         msg.exec_()
     def functions(self):
-        self.pushButton_1.clicked.connect(self.run_modbus)
-        self.pushButton_2.clicked.connect(self.choose_port)
-        self.pushButton_3.clicked.connect(self.stop)
+        self.ButtonStart.clicked.connect(self.run_modbus)
+        self.ButtonStop.clicked.connect(self.stop)
+        self.comboBox.currentTextChanged.connect(self.choose_port)
     def stop(self):
         self.thread.terminate()
         self.thread.wait()
         self.isConnection = False
         self.ModbusConnection = False
-        self.pushButton_1.setEnabled(False)
-        self.pushButton_2.setEnabled(True)
-        self.pushButton_3.setEnabled(False)
+        self.ButtonStart.setEnabled(True)
+        self.ButtonStop.setEnabled(False)
         self.comboBox.setEnabled(True)
         if (self.modbus.client.is_socket_open()):
             try:
@@ -140,36 +132,30 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 pass
 
     def choose_port(self):
-        self.port =  self.comboBox.currentText()
-        self.pushButton_1.setEnabled(True)
-        self.pushButton_2.setEnabled(False)
-        self.comboBox.setEnabled(False)
+        self.port =  self.ports_name[self.comboBox.currentIndex()]
+        self.ButtonStart.setEnabled(True)
 
     def run_modbus(self):
         if self.isConnection:
-            self.pushButton_1.setEnabled(False)
-            self.pushButton_3.setEnabled(True)
+            self.ButtonStart.setEnabled(False)
+            self.ButtonStop.setEnabled(True)
         else:
             self.modbus = ModbusRTU()
             self.isConnection = self.modbus.run_sync_simple_client(self.port)
-
             if not self.isConnection:
                 self.QMessage("Подключение не удалось")
-                self.pushButton_1.setEnabled(False)
-                self.pushButton_2.setEnabled(True)
+                self.ButtonStart.setEnabled(True)
                 self.comboBox.setEnabled(True)
-
             else:
                 self.thread.modbus = self.modbus
                 self.thread.start()
-                self.thread.isWork = True
-                self.pushButton_1.setEnabled(False)
-                self.pushButton_3.setEnabled(True)
+                self.ButtonStart.setEnabled(False)
+                self.ButtonStop.setEnabled(True)
+                self.comboBox.setEnabled(False)
 
 
 if __name__ == "__main__":
-
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = GUI()
-    MainWindow.show()
-    sys.exit(app.exec_())
+        app = QtWidgets.QApplication(sys.argv)
+        MainWindow = GUI()
+        MainWindow.show()
+        sys.exit(app.exec_())

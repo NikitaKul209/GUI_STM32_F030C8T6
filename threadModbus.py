@@ -17,9 +17,9 @@ class Worker(QThread):
             if isinstance(value, pymodbus.exceptions.ModbusIOException):
                 self.sinout.emit(str(value))
             elif isinstance(value, pymodbus.pdu.ExceptionResponse):
-
-                self.sinout.emit(str(value.exception_code))
+                self.sinout.emit(str(value))
+            elif isinstance(value,pymodbus.exceptions.ConnectionException):
+                self.sinout.emit(str(value))
             else:
                 self.sinout.emit(str(value.registers))
-
             self.sleep(1)
