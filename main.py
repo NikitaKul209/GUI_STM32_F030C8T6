@@ -37,6 +37,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.ports_name.append(port.name)
             self.comboBox.addItem(str(port))
         self.port = None
+        self.i = 1
 
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
@@ -107,6 +108,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 data_writer.writerow(val)
 
     def plot(self):
+        self.i = 1
         if not os.path.isfile("data.csv"):
             self.QMessage("Файл с данными не найден")
         else:
@@ -115,13 +117,15 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             pressure = df['Давление']
             temp = df['Температура']
             humidity = df['Влажность']
+            while len(date)/self.i >15:
+                self.i= self.i+1
 
             plt.figure()
             plt.title('График давления')
             plt.xlabel('Время')
             plt.ylabel('Давление')
-            plt.plot(date, pressure, marker='o', linestyle='-', color='b', label='Давление')
-            plt.xticks(date[::20], rotation=45)
+            plt.plot(date, pressure, marker='o', linestyle='-', color='g', label='Давление')
+            plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
 
@@ -129,8 +133,8 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             plt.title('График температуры')
             plt.xlabel('Время')
             plt.ylabel('Температура')
-            plt.plot(date, temp, marker='o', linestyle='-', color='b', label='Температура')
-            plt.xticks(date[::20], rotation=45)
+            plt.plot(date, temp, marker='o', linestyle='-', color='r', label='Температура')
+            plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
 
@@ -139,7 +143,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             plt.xlabel('Время')
             plt.ylabel('Влажность')
             plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
-            plt.xticks(date[::20], rotation=45)
+            plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
 
