@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1080</width>
+    <width>1123</width>
     <height>655</height>
    </rect>
   </property>
@@ -31,7 +31,7 @@
      <rect>
       <x>450</x>
       <y>250</y>
-      <width>571</width>
+      <width>661</width>
       <height>371</height>
      </rect>
     </property>
@@ -54,7 +54,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>700</x>
       <y>190</y>
       <width>161</width>
       <height>61</height>
@@ -259,10 +259,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QWidget" name="horizontalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>10</y>
-      <width>841</width>
-      <height>181</height>
+      <x>20</x>
+      <y>20</y>
+      <width>1091</width>
+      <height>171</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_9">
@@ -343,6 +343,26 @@ p, li { white-space: pre-wrap; }
            </property>
            <property name="text">
             <string>Стоп</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ButtonGraph">
+           <property name="minimumSize">
+            <size>
+             <width>190</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Графики</string>
            </property>
           </widget>
          </item>

@@ -1,10 +1,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
+import matplotlib.pyplot as plt
 from form import Ui_MainWindow
 import serial.tools.list_ports
 from threadModbus import Worker
 from  modbus import ModbusRTU
 import datetime
+import pandas as pd
 import serial
 import sys
 import os
@@ -104,6 +106,44 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 val = [data,*value]
                 data_writer.writerow(val)
 
+    def plot(self):
+        if not os.path.isfile("data.csv"):
+            self.QMessage("Файл с данными не найден")
+        else:
+            df = pd.read_csv('data.csv',encoding='cp1251')
+            date = df['Время']
+            pressure = df['Давление']
+            temp = df['Температура']
+            humidity = df['Влажность']
+
+            plt.figure()
+            plt.title('График давления')
+            plt.xlabel('Время')
+            plt.ylabel('Давление')
+            plt.plot(date, pressure, marker='o', linestyle='-', color='b', label='Давление')
+            plt.xticks(date[::20], rotation=45)
+            plt.legend()
+            plt.grid()
+
+            plt.figure()
+            plt.title('График температуры')
+            plt.xlabel('Время')
+            plt.ylabel('Температура')
+            plt.plot(date, temp, marker='o', linestyle='-', color='b', label='Температура')
+            plt.xticks(date[::20], rotation=45)
+            plt.legend()
+            plt.grid()
+
+            plt.figure()
+            plt.title('График относительной влажности')
+            plt.xlabel('Время')
+            plt.ylabel('Влажность')
+            plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
+            plt.xticks(date[::20], rotation=45)
+            plt.legend()
+            plt.grid()
+
+            plt.show()
 
 
     def set_text_edit_color(self,color1, color2, color3):
@@ -132,6 +172,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.ButtonStart.clicked.connect(self.run_modbus)
         self.ButtonStop.clicked.connect(self.stop)
         self.comboBox.currentTextChanged.connect(self.choose_port)
+        self.ButtonGraph.clicked.connect(self.plot)
     def stop(self):
         self.thread.terminate()
         self.thread.wait()
