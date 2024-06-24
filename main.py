@@ -8,7 +8,7 @@ import datetime
 import serial
 import sys
 import os
-
+import csv
 class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -27,7 +27,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.thread.sinout.connect(self.update_value)
         self.ButtonStart.setEnabled(False)
         self.ButtonStop.setEnabled(False)
-        self.setWindowFlags(QtCore.Qt.MSWindowsFixedSizeDialogHint)
+        self.setWindowFlags(QtCore.Qt.WindowType.MSWindowsFixedSizeDialogHint)
 
         ports = serial.tools.list_ports.comports()
         self.ports_name = []
@@ -68,7 +68,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 self.textEdit_Pressure.setText(str(int(value[1]) / 10))
                 self.textEdit_Temperature.setText(str(int(value[2]) / 10))
                 self.textEdit_Humidity.setText(str(int(value[3]) / 10))
-
+                self.write_csv(date_time,value)
                 for i in range(7):
                     if (int(value[0]) & 1 << i):
                         error +=f'{date_time} {self.dict_errors[i]}'
@@ -89,6 +89,21 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.text_edit_box.append(error_message)
         if len(self.text_edit_box) > self.max_errors:
             self.text_edit_box.pop(0)
+
+
+    def write_csv(self,data,value):
+
+        if not os.path.isfile("data.csv"):
+            with open("data.csv", mode='a', newline='') as file:
+                header = ["Время", "Ошибки", "Давление", "Температура", "Влажность"]
+                data_writer = csv.writer(file)
+                data_writer.writerow(header)
+        else:
+            with open("data.csv", mode='a', newline='') as file:
+                data_writer = csv.writer(file)
+                val = [data,*value]
+                data_writer.writerow(val)
+
 
 
     def set_text_edit_color(self,color1, color2, color3):
