@@ -98,7 +98,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
         if not os.path.isfile("data.csv"):
             with open("data.csv", mode='a', newline='') as file:
-                header = ["Время", "Ошибки", "Давление", "Температура", "Влажность"]
+                header = ["Время", "Ошибки", "Давление, кПа", "Температура,°С", "Влажность, %RH"]
                 data_writer = csv.writer(file)
                 data_writer.writerow(header)
         else:
@@ -114,35 +114,38 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         else:
             df = pd.read_csv('data.csv',encoding='cp1251')
             date = df['Время']
-            pressure = df['Давление']
-            temp = df['Температура']
-            humidity = df['Влажность']
+            pressure = df['Давление, кПа']
+            temp = df['Температура,°С']
+            humidity = df['Влажность, %RH']
             while len(date)/self.i >15:
                 self.i= self.i+1
 
-            plt.figure()
-            plt.title('График давления')
-            plt.xlabel('Время')
-            plt.ylabel('Давление')
+            plt.figure(figsize=(15, 8))
+            plt.title('График давления',fontweight='bold',fontsize=16)
+            plt.xlabel('Время',fontweight='bold',fontsize=16)
+            plt.ylabel('Давление, кПа',fontweight='bold',fontsize=16)
             plt.plot(date, pressure, marker='o', linestyle='-', color='g', label='Давление')
+            plt.subplots_adjust(bottom=0.2)
             plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
 
-            plt.figure()
-            plt.title('График температуры')
-            plt.xlabel('Время')
-            plt.ylabel('Температура')
+            plt.figure(figsize=(15, 8))
+            plt.title('График температуры',fontweight='bold',fontsize=16)
+            plt.xlabel('Время',fontweight='bold',fontsize=16)
+            plt.ylabel('Температура,°С',fontweight='bold',fontsize=16)
             plt.plot(date, temp, marker='o', linestyle='-', color='r', label='Температура')
+            plt.subplots_adjust(bottom=0.2)
             plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
 
-            plt.figure()
-            plt.title('График относительной влажности')
-            plt.xlabel('Время')
-            plt.ylabel('Влажность')
+            plt.figure(figsize=(15, 8))
+            plt.title('График относительной влажности',fontweight='bold',fontsize=16)
+            plt.xlabel('Время',fontweight='bold',fontsize=16)
+            plt.ylabel('Влажность, %RH',fontweight='bold',fontsize=16)
             plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
+            plt.subplots_adjust(bottom=0.2)
             plt.xticks(date[::self.i], rotation=45)
             plt.legend()
             plt.grid()
