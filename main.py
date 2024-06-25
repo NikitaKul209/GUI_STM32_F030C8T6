@@ -95,7 +95,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
 
     def write_csv(self,data,value):
-
+        os.chmod("data.csv", 0o777)
         if not os.path.isfile("data.csv"):
             with open("data.csv", mode='a', newline='') as file:
                 header = ["Время", "Ошибки", "Давление, кПа", "Температура,°С", "Влажность, %RH"]
@@ -106,6 +106,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 data_writer = csv.writer(file)
                 val = [data,*value]
                 data_writer.writerow(val)
+        os.chmod("data.csv", 0o444)
 
     def plot(self):
         self.i = 1
