@@ -37,7 +37,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.ports_name.append(port.name)
             self.comboBox.addItem(str(port))
         self.port = None
-        self.i = 1
+        self.plot_scaling = 1
 
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
@@ -59,7 +59,8 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             for err in error_excepions:
                 if err in value:
                     self.set_text_edit_color("red","red","red")
-                    self.display_errors(f"{date_time} Ошибка связи по Modbus (см. logs.txt)" + '\n',f"{date_time} Ошибка связи по Modbus: {value}" + '\n')
+                    self.display_errors(f"{date_time} Ошибка связи по Modbus (см. logs.txt)"
+                                        + '\n',f"{date_time} Ошибка связи по Modbus: {value}" + '\n')
                     self.ModbusConnection = False
                     return
             else:
@@ -95,64 +96,66 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
 
 
     def write_csv(self,data,value):
-        os.chmod("data.csv", 0o777)
+
         if not os.path.isfile("data.csv"):
             with open("data.csv", mode='a', newline='') as file:
                 header = ["Время", "Ошибки", "Давление, кПа", "Температура,°С", "Влажность, %RH"]
-                data_writer = csv.writer(file)
+                data_writer = csv.writer(file,delimiter=";")
                 data_writer.writerow(header)
+                os.chmod("data.csv", 0o444)
         else:
+            os.chmod("data.csv", 0o777)
             with open("data.csv", mode='a', newline='') as file:
-                data_writer = csv.writer(file)
-                val = [data,*value]
+                data_writer = csv.writer(file,delimiter=";")
+                val = [data,value[0],*[float(i)/10 for i in value[1:4]]]
                 data_writer.writerow(val)
-        os.chmod("data.csv", 0o444)
+                os.chmod("data.csv", 0o444)
 
     def plot(self):
-        self.i = 1
+        self.plot_scaling = 1
         if not os.path.isfile("data.csv"):
             self.QMessage("Файл с данными не найден")
         else:
-            df = pd.read_csv('data.csv',encoding='cp1251')
-            date = df['Время']
-            pressure = df['Давление, кПа']
-            temp = df['Температура,°С']
-            humidity = df['Влажность, %RH']
-            while len(date)/self.i >15:
-                self.i= self.i+1
+            try:
+                df = pd.read_csv('data.csv',encoding='cp1251',delimiter=";")
+                date = df['Время']
+                pressure = df['Давление, кПа']
+                temp = df['Температура,°С']
+                humidity = df['Влажность, %RH']
+                while len(date)/self.plot_scaling >15:
+                    self.plot_scaling= self.plot_scaling + 1
+                plt.figure(figsize=(15, 8))
+                plt.title('График давления',fontweight='bold',fontsize=16)
+                plt.xlabel('Время',fontweight='bold',fontsize=16)
+                plt.ylabel('Давление, кПа',fontweight='bold',fontsize=16)
+                plt.plot(date, pressure, marker='o', linestyle='-', color='g', label='Давление')
+                plt.subplots_adjust(bottom=0.2)
+                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.legend()
+                plt.grid()
 
-            plt.figure(figsize=(15, 8))
-            plt.title('График давления',fontweight='bold',fontsize=16)
-            plt.xlabel('Время',fontweight='bold',fontsize=16)
-            plt.ylabel('Давление, кПа',fontweight='bold',fontsize=16)
-            plt.plot(date, pressure, marker='o', linestyle='-', color='g', label='Давление')
-            plt.subplots_adjust(bottom=0.2)
-            plt.xticks(date[::self.i], rotation=45)
-            plt.legend()
-            plt.grid()
+                plt.figure(figsize=(15, 8))
+                plt.title('График температуры',fontweight='bold',fontsize=16)
+                plt.xlabel('Время',fontweight='bold',fontsize=16)
+                plt.ylabel('Температура,°С',fontweight='bold',fontsize=16)
+                plt.plot(date, temp, marker='o', linestyle='-', color='r', label='Температура')
+                plt.subplots_adjust(bottom=0.2)
+                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.legend()
+                plt.grid()
 
-            plt.figure(figsize=(15, 8))
-            plt.title('График температуры',fontweight='bold',fontsize=16)
-            plt.xlabel('Время',fontweight='bold',fontsize=16)
-            plt.ylabel('Температура,°С',fontweight='bold',fontsize=16)
-            plt.plot(date, temp, marker='o', linestyle='-', color='r', label='Температура')
-            plt.subplots_adjust(bottom=0.2)
-            plt.xticks(date[::self.i], rotation=45)
-            plt.legend()
-            plt.grid()
-
-            plt.figure(figsize=(15, 8))
-            plt.title('График относительной влажности',fontweight='bold',fontsize=16)
-            plt.xlabel('Время',fontweight='bold',fontsize=16)
-            plt.ylabel('Влажность, %RH',fontweight='bold',fontsize=16)
-            plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
-            plt.subplots_adjust(bottom=0.2)
-            plt.xticks(date[::self.i], rotation=45)
-            plt.legend()
-            plt.grid()
-
-            plt.show()
-
+                plt.figure(figsize=(15, 8))
+                plt.title('График относительной влажности',fontweight='bold',fontsize=16)
+                plt.xlabel('Время',fontweight='bold',fontsize=16)
+                plt.ylabel('Влажность, %RH',fontweight='bold',fontsize=16)
+                plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
+                plt.subplots_adjust(bottom=0.2)
+                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.legend()
+                plt.grid()
+                plt.show()
+            except:
+                self.QMessage("Ошибка при построении графика")
 
     def set_text_edit_color(self,color1, color2, color3):
         self.textEdit_Pressure.setStyleSheet(f'background-color: {color1};')

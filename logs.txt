@@ -26,7 +26,7 @@
 Выход за допустимый диапазон измерения влажности
 
 Ошибка в работе интерфейса I2C
-
+мсрпм
 16.06.2024 01:31:51
 Измерение давления не завершено
 
@@ -33626,3 +33626,190 @@
 25.06.2024 14:04:46 Ошибка измерения T и RH
 25.06.2024 14:04:48 Ошибка измерения P
 25.06.2024 14:04:48 Ошибка измерения T и RH
+26.06.2024 08:58:07 Связь по Modbus установлена
+26.06.2024 09:01:47 Связь по Modbus установлена
+26.06.2024 09:02:52 Связь по Modbus установлена
+26.06.2024 09:03:12 Связь по Modbus установлена
+26.06.2024 09:04:59 Связь по Modbus установлена
+26.06.2024 09:05:19 Связь по Modbus установлена
+26.06.2024 09:05:32 Связь по Modbus установлена
+26.06.2024 09:06:04 Связь по Modbus установлена
+26.06.2024 09:06:14 Связь по Modbus установлена
+26.06.2024 09:07:16 Связь по Modbus установлена
+26.06.2024 09:07:40 Связь по Modbus установлена
+26.06.2024 09:08:04 Связь по Modbus установлена
+26.06.2024 09:08:15 Связь по Modbus установлена
+26.06.2024 09:08:31 Связь по Modbus установлена
+26.06.2024 09:09:07 Связь по Modbus установлена
+26.06.2024 09:09:24 Связь по Modbus установлена
+26.06.2024 09:10:39 Связь по Modbus установлена
+26.06.2024 09:14:45 Связь по Modbus установлена
+26.06.2024 09:16:23 Связь по Modbus установлена
+26.06.2024 09:16:49 Связь по Modbus установлена
+26.06.2024 09:17:15 Связь по Modbus установлена
+26.06.2024 09:19:16 Связь по Modbus установлена
+26.06.2024 09:47:36 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+26.06.2024 09:47:43 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:47:50 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:47:57 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:04 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:11 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:19 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:26 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:33 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:40 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:47 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:48:54 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:02 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:09 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:16 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:23 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:30 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:38 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:45 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:52 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:49:59 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:50:06 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:50:13 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:50:21 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:50:28 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+26.06.2024 09:50:29 Связь по Modbus установлена
+26.06.2024 10:17:08 Связь по Modbus установлена
+26.06.2024 10:24:49 Связь по Modbus установлена
+26.06.2024 10:25:07 Связь по Modbus установлена
+26.06.2024 10:27:30 Связь по Modbus установлена
+26.06.2024 10:31:20 Связь по Modbus установлена
+26.06.2024 11:30:18 Связь по Modbus установлена
+26.06.2024 11:31:11 Связь по Modbus установлена
+26.06.2024 11:33:56 Связь по Modbus установлена
+26.06.2024 11:37:30 Связь по Modbus установлена
+26.06.2024 11:40:58 Связь по Modbus установлена
+26.06.2024 12:17:50 Связь по Modbus установлена
+26.06.2024 12:34:15 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+26.06.2024 12:34:21 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 12:34:22 Связь по Modbus установлена
+26.06.2024 13:00:18 Связь по Modbus установлена
+26.06.2024 14:26:07 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+26.06.2024 14:26:13 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:19 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:25 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:31 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:37 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:43 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:49 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:26:55 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:01 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:07 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:13 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:19 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:25 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:31 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:37 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:43 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:49 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:27:55 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:01 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:07 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:13 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:19 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:25 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:31 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:37 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:43 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:49 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:28:55 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:01 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:07 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:29:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:30:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:31:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:32:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:33:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:14 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:20 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:26 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:32 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:38 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:44 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:50 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:34:56 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:02 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:08 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:15 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:21 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:27 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:33 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:39 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:45 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:51 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:35:57 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:03 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:09 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:15 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:21 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:27 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:33 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:39 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:45 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:51 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:36:57 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:03 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:09 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:15 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:21 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:27 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:33 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:39 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 14:37:40 Связь по Modbus установлена
+26.06.2024 15:17:17 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+26.06.2024 15:17:23 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 15:17:30 Ошибка связи по Modbus: Modbus Error: [Connection] Failed to connect[ModbusSerialClient COM12:0]
+26.06.2024 15:17:30 Связь по Modbus установлена
+26.06.2024 15:18:12 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+26.06.2024 15:18:13 Связь по Modbus установлена
+26.06.2024 15:53:23 Связь по Modbus установлена
+26.06.2024 15:58:12 Связь по Modbus установлена
+26.06.2024 16:29:41 Связь по Modbus установлена
+26.06.2024 16:31:29 Связь по Modbus установлена
