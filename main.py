@@ -38,6 +38,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.comboBox.addItem(str(port))
         self.port = None
         self.plot_scaling = 1
+        self.plot_date_period = 60
 
         self.dict_errors = {0:"Ошибка измерения P\n",
                        1:("Ошибка измерения T и RH\n"),
@@ -122,15 +123,15 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 pressure = df['Давление, кПа']
                 temp = df['Температура,°С']
                 humidity = df['Влажность, %RH']
-                while len(date)/self.plot_scaling >15:
+                while len(date[::self.plot_date_period])/self.plot_scaling >15:
                     self.plot_scaling= self.plot_scaling + 1
                 plt.figure(figsize=(15, 8))
                 plt.title('График давления',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Давление, кПа',fontweight='bold',fontsize=16)
-                plt.plot(date, pressure, marker='o', linestyle='-', color='g', label='Давление')
+                plt.plot(date[::self.plot_date_period], pressure[::self.plot_date_period], marker='o', linestyle='-', color='g', label='Давление')
                 plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
                 plt.legend()
                 plt.grid()
 
@@ -138,9 +139,9 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 plt.title('График температуры',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Температура,°С',fontweight='bold',fontsize=16)
-                plt.plot(date, temp, marker='o', linestyle='-', color='r', label='Температура')
+                plt.plot(date[::self.plot_date_period], temp[::self.plot_date_period], marker='o', linestyle='-', color='r', label='Температура')
                 plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
                 plt.legend()
                 plt.grid()
 
@@ -148,9 +149,9 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 plt.title('График относительной влажности',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Влажность, %RH',fontweight='bold',fontsize=16)
-                plt.plot(date, humidity, marker='o', linestyle='-', color='b', label='Влажность')
+                plt.plot(date[::self.plot_date_period], humidity[::self.plot_date_period], marker='o', linestyle='-', color='b', label='Влажность')
                 plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling], rotation=45)
+                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
                 plt.legend()
                 plt.grid()
                 plt.show()
