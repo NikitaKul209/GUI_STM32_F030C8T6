@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1123</width>
-    <height>655</height>
+    <width>1200</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -29,8 +29,8 @@
    <widget class="QTextEdit" name="textEdit_Messages">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>250</y>
+      <x>460</x>
+      <y>190</y>
       <width>661</width>
       <height>371</height>
      </rect>
@@ -54,8 +54,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>190</y>
+      <x>710</x>
+      <y>130</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -77,8 +77,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>250</y>
+      <x>30</x>
+      <y>190</y>
       <width>412</width>
       <height>371</height>
      </rect>
@@ -259,10 +259,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QWidget" name="horizontalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
+      <x>30</x>
+      <y>0</y>
       <width>1091</width>
-      <height>171</height>
+      <height>121</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_9">

@@ -1,6 +1,7 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 from form import Ui_MainWindow
 import serial.tools.list_ports
 from threadModbus import Worker
@@ -19,8 +20,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.setWindowIcon(QtGui.QIcon("Kurchatov_Institute_logo.png"))
         self.functions()
         self.text_edit_errors = ""
-        self.text_edit_iteration = 0
-        self.text_edit_box=[]
+        self.text_edit_box = []
         self.max_errors = 15
         self.ModbusConnection = False
         self.modbus = None
@@ -29,15 +29,18 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         self.thread.sinout.connect(self.update_value)
         self.ButtonStart.setEnabled(False)
         self.ButtonStop.setEnabled(False)
-        self.setWindowFlags(QtCore.Qt.WindowType.MSWindowsFixedSizeDialogHint)
+        self.setFixedSize(1200, 600)
 
         ports = serial.tools.list_ports.comports()
+        if len(ports) == 0:
+            self.ButtonStart.setEnabled(False)
         self.ports_name = []
+
         for port in ports:
             self.ports_name.append(port.name)
             self.comboBox.addItem(str(port))
         self.port = None
-        self.plot_scaling = 1
+
         self.plot_date_period = 60
 
         self.dict_errors = {0:"Ошибка измерения P\n",
@@ -66,7 +69,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     return
             else:
                 if not self.ModbusConnection:
-                    self.display_errors(f"{date_time} Связь по Modbus установлена" + '\n',None)
+                    self.display_errors(f"{date_time} Связь по Modbus установлена" + '\n',False)
                     self.ModbusConnection = True
 
                 value = (value.strip('][').split(', '))
@@ -84,11 +87,11 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                     else:
                         self.dict_valid_data[i].setStyleSheet("background-color: green;")
                 if error !="":
-                    self.display_errors(error,None)
+                    self.display_errors( error,False)
 
         except:
             self.stop()
-            self.QMessage("Ошибка при попытке вывода данных")
+            self.q_message("Ошибка при попытке вывода данных")
 
     def log_error(self, error_message):
         self.text_edit_box.append(error_message)
@@ -113,9 +116,8 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 os.chmod("data.csv", 0o444)
 
     def plot(self):
-        self.plot_scaling = 1
         if not os.path.isfile("data.csv"):
-            self.QMessage("Файл с данными не найден")
+            self.q_message("Файл с данными не найден")
         else:
             try:
                 df = pd.read_csv('data.csv',encoding='cp1251',delimiter=";")
@@ -123,15 +125,16 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 pressure = df['Давление, кПа']
                 temp = df['Температура,°С']
                 humidity = df['Влажность, %RH']
-                while len(date[::self.plot_date_period])/self.plot_scaling >15:
-                    self.plot_scaling= self.plot_scaling + 1
+                max_ticks = 1 if min(len(date[::60]),15)==0 else  min(len(date[::60]),15)
                 plt.figure(figsize=(15, 8))
                 plt.title('График давления',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Давление, кПа',fontweight='bold',fontsize=16)
-                plt.plot(date[::self.plot_date_period], pressure[::self.plot_date_period], marker='o', linestyle='-', color='g', label='Давление')
+                plt.plot(date[::self.plot_date_period], pressure[::self.plot_date_period], marker='o',markerfacecolor = "green", linestyle='-',linewidth = 1, color='black',markersize = 5, label='Давление')
                 plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
+                ax = plt.gca()
+                ax.xaxis.set_major_locator(MaxNLocator(nbins = max_ticks))
+                plt.xticks(rotation=45)
                 plt.legend()
                 plt.grid()
 
@@ -139,9 +142,11 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 plt.title('График температуры',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Температура,°С',fontweight='bold',fontsize=16)
-                plt.plot(date[::self.plot_date_period], temp[::self.plot_date_period], marker='o', linestyle='-', color='r', label='Температура')
-                plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
+                plt.plot(date[::self.plot_date_period], temp[::self.plot_date_period], marker='o',markerfacecolor = "red", linestyle='-',linewidth = 1, color='black',markersize = 5, label='Температура')
+                plt.subplots_adjust(bottom=0.2,top=0.9)
+                ax = plt.gca()
+                ax.xaxis.set_major_locator(MaxNLocator(nbins = max_ticks))
+                plt.xticks(rotation=45)
                 plt.legend()
                 plt.grid()
 
@@ -149,24 +154,26 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
                 plt.title('График относительной влажности',fontweight='bold',fontsize=16)
                 plt.xlabel('Время',fontweight='bold',fontsize=16)
                 plt.ylabel('Влажность, %RH',fontweight='bold',fontsize=16)
-                plt.plot(date[::self.plot_date_period], humidity[::self.plot_date_period], marker='o', linestyle='-', color='b', label='Влажность')
+                plt.plot(date[::self.plot_date_period], humidity[::self.plot_date_period], marker='o',markerfacecolor = "blue", linestyle='-',linewidth = 1, color='black',markersize = 5, label='Влажность')
                 plt.subplots_adjust(bottom=0.2)
-                plt.xticks(date[::self.plot_scaling*self.plot_date_period], rotation=45)
+                ax = plt.gca()
+                ax.xaxis.set_major_locator(MaxNLocator(nbins = max_ticks))
+                plt.xticks(rotation=45)
                 plt.legend()
                 plt.grid()
                 plt.show()
             except:
-                self.QMessage("Ошибка при построении графика")
+                self.q_message("Ошибка при построении графика")
 
     def set_text_edit_color(self,color1, color2, color3):
         self.textEdit_Pressure.setStyleSheet(f'background-color: {color1};')
         self.textEdit_Temperature.setStyleSheet(f'background-color: {color2};')
         self.textEdit_Humidity.setStyleSheet(f'background-color: {color3};')
 
-    def display_errors(self,error,log_error):
-        if log_error == None:
-            log_error = error
-        self.log_error(error)
+    def display_errors(self,display_error,log_error):
+        if not log_error:
+            log_error = display_error
+        self.log_error(display_error)
         for i in self.text_edit_box[::-1]:
             self.text_edit_errors += i
         self.textEdit_Messages.setText(self.text_edit_errors)
@@ -174,7 +181,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             logs.write(log_error)
         self.text_edit_errors = ""
 
-    def QMessage(self,error):
+    def q_message(self, error):
         msg = QMessageBox()
         msg.setWindowTitle("Ошибка")
         msg.setText(error)
@@ -211,7 +218,7 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
             self.modbus = ModbusRTU()
             self.isConnection = self.modbus.run_sync_simple_client(self.port)
             if not self.isConnection:
-                self.QMessage("Подключение не удалось")
+                self.q_message("Подключение не удалось")
                 self.ButtonStart.setEnabled(True)
                 self.comboBox.setEnabled(True)
             else:
