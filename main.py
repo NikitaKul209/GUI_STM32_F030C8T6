@@ -34,12 +34,13 @@ class GUI(Ui_MainWindow,QtWidgets.QMainWindow):
         ports = serial.tools.list_ports.comports()
         if len(ports) == 0:
             self.ButtonStart.setEnabled(False)
-        self.ports_name = []
-
-        for port in ports:
-            self.ports_name.append(port.name)
-            self.comboBox.addItem(str(port))
-        self.port = None
+        else:
+            self.ports_name = []
+            for port in ports:
+                self.ports_name.append(port.name)
+                self.comboBox.addItem(str(port))
+            self.port = None
+            self.choose_port()
 
         self.plot_date_period = 60
 

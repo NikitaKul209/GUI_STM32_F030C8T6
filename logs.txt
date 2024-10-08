@@ -1,0 +1,10 @@
+01.10.2024 11:43:12 Связь по Modbus установлена
+01.10.2024 11:43:17 Связь по Modbus установлена
+01.10.2024 11:43:27 Ошибка связи по Modbus: Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 4 bytes (0 received)
+01.10.2024 11:43:34 Ошибка связи по Modbus: Modbus Error: [Input/Output] No Response received from the remote slave/Unable to decode response
+01.10.2024 11:43:38 Связь по Modbus установлена
+01.10.2024 11:44:52 Связь по Modbus установлена
+01.10.2024 11:52:33 Связь по Modbus установлена
+01.10.2024 11:52:40 Связь по Modbus установлена
+01.10.2024 11:52:54 Связь по Modbus установлена
+01.10.2024 11:54:01 Связь по Modbus установлена
