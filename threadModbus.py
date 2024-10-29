@@ -21,5 +21,13 @@ class Worker(QThread):
             elif isinstance(value,pymodbus.exceptions.ConnectionException):
                 self.sinout.emit(str(value))
             else:
-                self.sinout.emit(str(value.registers))
+                values = []
+                for i in value.registers:
+                    if i >= 2 ** 15:
+                        signed_num = i - 2 ** 16
+                        values.append(signed_num)
+                    else:
+                        signed_num = i
+                        values.append(signed_num)
+                self.sinout.emit(str(values))
             self.sleep(1)

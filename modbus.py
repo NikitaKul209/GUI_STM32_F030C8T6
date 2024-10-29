@@ -1,7 +1,7 @@
 import pymodbus.client as ModbusClient
 from pymodbus import (
     ExceptionResponse,
-    Framer,
+    framer,
     ModbusException,
     pymodbus_apply_logging_config,
 
@@ -10,14 +10,14 @@ class ModbusRTU:
     def __init__(self):
         self.client = None
 
-    def run_sync_simple_client(self,port, framer=Framer.SOCKET.RTU):
+    def run_sync_simple_client(self,port):
         """Run sync client."""
         # activate debugging
         # pymodbus_apply_logging_config("DEBUG")
 
         self.client = ModbusClient.ModbusSerialClient(
             port,
-            framer=framer,
+
             # timeout=10,
             # retries=5,
             # retry_on_empty=True,
