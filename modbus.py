@@ -1,7 +1,7 @@
 import pymodbus.client as ModbusClient
 from pymodbus import (
     ExceptionResponse,
-    framer,
+    Framer,
     ModbusException,
     pymodbus_apply_logging_config,
 
@@ -17,7 +17,7 @@ class ModbusRTU:
 
         self.client = ModbusClient.ModbusSerialClient(
             port,
-
+            framer=Framer.SOCKET.RTU,
             # timeout=10,
             # retries=5,
             # retry_on_empty=True,
